@@ -4,107 +4,121 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="robots" content="noindex, nofollow, noarchive">
-<title>O.Nursing — بنك أسئلة Module 1: Reproductive Biology</title>
+<title>O.Nursing — Special Notes | Module 1: Reproductive Biology</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Tajawal:wght@400;500;700;800&display=swap" rel="stylesheet">
 <style>
 :root{
-  --burg:#7C2D3E; --burg-d:#5C1F2D; --gold:#C9A227; --gold-l:#F5ECD7;
-  --cream:#FBF7F0; --warm:#F9EFEA; --ink:#2b2b2b; --mut:#8a7a72;
-  --green:#2e7d4f; --green-bg:#e6f4ec; --red:#b3261e; --red-bg:#fdecea;
+  --navy:#1B3A5C; --navy-d:#122A44; --sky:#5B8DB8; --pale:#EAF2F8; --pale2:#E3EDF5;
+  --bg:#F2F7FB; --ink:#22303C; --mut:#5A6B7C;
+  --green:#2e7d4f; --green-bg:#e6f4ec; --red:#B3261E; --red-bg:#FDECEA;
+  /* timer-snippet injected styles read these vars (navy values on purpose) */
+  --gold:#5B8DB8; --gold-l:#EAF2F8; --burg:#1B3A5C;
 }
 *{box-sizing:border-box; margin:0; padding:0;}
-body{font-family:'Tajawal',sans-serif; background:var(--cream); color:var(--ink); min-height:100vh;}
+body{font-family:'Tajawal',sans-serif; background:var(--bg); color:var(--ink); min-height:100vh;}
 .wrap{max-width:760px; margin:0 auto; padding:0 18px 40px; width:100%;}
 /* header */
 header{padding:20px 0 8px; text-align:center;}
-.brand{font-family:'Great Vibes',cursive; font-size:34px; color:var(--burg); line-height:1;}
-.brand .dot{color:#FF8A5F;}
-.brand .star{color:var(--gold); font-size:20px; vertical-align:middle;}
+.brand{font-family:'Great Vibes',cursive; font-size:34px; color:var(--navy); line-height:1;}
+.brand .dot{color:var(--sky);}
+.brand .star{color:var(--sky); font-size:20px; vertical-align:middle;}
 .sub{font-size:13px; color:var(--mut); margin-top:4px;}
-.rule{height:2px; background:linear-gradient(90deg,transparent,var(--gold),transparent); margin:12px auto 0; max-width:420px;}
+.rule{height:2px; background:linear-gradient(90deg,transparent,var(--sky),transparent); margin:12px auto 0; max-width:420px;}
 /* cards */
-.card{background:#fff; border:1px solid #ead9c9; border-radius:16px; padding:20px; margin-top:16px; box-shadow:0 2px 10px rgba(124,45,62,.06);}
-h1{font-size:21px; color:var(--burg); line-height:1.5;}
+.card{background:#fff; border:1px solid #C9D9E8; border-radius:16px; padding:20px; margin-top:16px; box-shadow:0 2px 10px rgba(27,58,92,.07);}
+h1{font-size:21px; color:var(--navy); line-height:1.5;}
 h1 .en{font-size:15px; color:var(--mut); display:block; font-weight:500;}
 .meta{display:flex; gap:8px; flex-wrap:wrap; margin-top:12px;}
-.pill{background:var(--gold-l); color:var(--burg-d); border:1px solid var(--gold); border-radius:20px; padding:4px 12px; font-size:13px; font-weight:700;}
-.pill.soft{background:var(--warm); border-color:#e5c9c0;}
+.pill{background:var(--pale); color:var(--navy-d); border:1px solid var(--sky); border-radius:20px; padding:4px 12px; font-size:13px; font-weight:700;}
+.pill.soft{background:var(--pale2); border-color:#B9CBDD;}
+/* quick nav + source legend */
+.jumpnav{display:flex; gap:8px; flex-wrap:wrap; margin-top:14px;}
+.jumpnav a{flex:1; text-align:center; text-decoration:none; background:var(--navy); color:#fff; border-radius:12px; padding:10px 8px; font-size:14px; font-weight:700; line-height:1.4;}
+.jumpnav a span{display:block; font-size:11.5px; font-weight:500; opacity:.85;}
+.legend{background:var(--pale); border:1px solid #B9CBDD; border-radius:12px; padding:12px 14px; margin-top:14px; font-size:13.5px; line-height:2; color:var(--ink);}
+.legend b{color:var(--navy);}
+.legend .srcpill{margin:0 2px;}
+/* source tag (on every question) */
+.srctag{display:inline-block; background:var(--pale); color:var(--navy); border:1px solid var(--sky); border-radius:999px; padding:3px 10px; font-size:12px; font-weight:700; line-height:1.5;}
+.srctag.special{background:var(--navy); color:#fff; border-color:var(--navy);}
 /* level filter */
 .levels{display:flex; gap:8px; flex-wrap:wrap; margin-top:14px;}
-.lvl{border:1.5px solid var(--gold); background:#fff; color:var(--burg); border-radius:20px; padding:7px 16px; font-size:14px; font-weight:700; cursor:pointer; font-family:inherit;}
-.lvl.on{background:var(--burg); color:#fff; border-color:var(--burg);}
-.btn{display:block; width:100%; background:var(--burg); color:#fff; border:none; border-radius:12px; padding:14px; font-size:17px; font-weight:800; cursor:pointer; font-family:inherit; margin-top:16px;}
-.btn:hover{background:var(--burg-d);}
-.btn.ghost{background:#fff; color:var(--burg); border:1.5px solid var(--burg); margin-top:10px;}
+.lvl{border:1.5px solid var(--sky); background:#fff; color:var(--navy); border-radius:20px; padding:7px 16px; font-size:14px; font-weight:700; cursor:pointer; font-family:inherit;}
+.lvl.on{background:var(--navy); color:#fff; border-color:var(--navy);}
+.btn{display:block; width:100%; background:var(--navy); color:#fff; border:none; border-radius:12px; padding:14px; font-size:17px; font-weight:800; cursor:pointer; font-family:inherit; margin-top:16px;}
+.btn:hover{background:var(--navy-d);}
+.btn.ghost{background:#fff; color:var(--navy); border:1.5px solid var(--navy); margin-top:10px;}
 .btn:disabled{opacity:.5; cursor:default;}
 .small{font-size:13px; color:var(--mut); text-align:center; margin-top:10px; line-height:1.7;}
 /* quiz */
-.prog{height:8px; background:#eee; border-radius:8px; overflow:hidden; margin-top:16px;}
-.prog i{display:block; height:100%; background:linear-gradient(90deg,var(--gold),var(--burg)); width:0%; transition:width .3s;}
+.prog{height:8px; background:#DCE8F2; border-radius:8px; overflow:hidden; margin-top:16px;}
+.prog i{display:block; height:100%; background:linear-gradient(90deg,var(--sky),var(--navy)); width:0%; transition:width .3s;}
 .qtop{display:flex; justify-content:space-between; align-items:center; margin-top:14px; font-size:13px; color:var(--mut); font-weight:700;}
 .badge{font-size:12px; font-weight:800; border-radius:12px; padding:3px 10px;}
 .badge.easy{background:#e6f4ec; color:var(--green);}
-.badge.med{background:#fdf3d7; color:#8a6d00;}
-.badge.hard{background:#fdecea; color:var(--red);}
+.badge.med{background:#FDF3D7; color:#8a6d00;}
+.badge.hard{background:#FDECEA; color:var(--red);}
 .q{font-size:18px; font-weight:700; line-height:1.8; margin-top:12px; direction:ltr; text-align:left;}
 .q .ar-note{font-size:14px; color:var(--mut); font-weight:500; direction:rtl; text-align:right; display:block; margin-top:4px;}
+.qsrc{margin-top:10px; direction:ltr; text-align:left;}
 .opts{margin-top:14px; display:flex; flex-direction:column; gap:10px;}
-.opt{border:1.5px solid #e5d5c8; background:#fff; border-radius:12px; padding:12px 14px; font-size:16px; cursor:pointer; text-align:left; direction:ltr; font-family:inherit; line-height:1.5;}
-.opt:hover{border-color:var(--gold);}
+.opt{border:1.5px solid #C9D9E8; background:#fff; border-radius:12px; padding:12px 14px; font-size:16px; cursor:pointer; text-align:left; direction:ltr; font-family:inherit; line-height:1.5;}
+.opt:hover{border-color:var(--sky);}
 .opt.correct{border-color:var(--green); background:var(--green-bg);}
 .opt.wrong{border-color:var(--red); background:var(--red-bg);}
 .opt:disabled{cursor:default;}
 .tf{display:flex; gap:10px; margin-top:14px;}
 .tf .opt{flex:1; text-align:center; font-weight:800; font-size:17px;}
-.hintbtn{background:var(--gold-l); color:var(--burg-d); border:1px solid var(--gold); border-radius:10px; padding:8px 14px; font-size:14px; font-weight:700; cursor:pointer; font-family:inherit; margin-top:14px;}
-.hint{display:none; background:#fffbe6; border:1px dashed var(--gold); border-radius:10px; padding:10px 14px; margin-top:10px; font-size:14px; line-height:1.8;}
+.hintbtn{background:var(--pale); color:var(--navy-d); border:1px solid var(--sky); border-radius:10px; padding:8px 14px; font-size:14px; font-weight:700; cursor:pointer; font-family:inherit; margin-top:14px;}
+.hint{display:none; background:#FFFBE6; border:1px dashed var(--sky); border-radius:10px; padding:10px 14px; margin-top:10px; font-size:14px; line-height:1.8;}
 .hint.show{display:block;}
 .explain{display:none; border-radius:10px; padding:12px 14px; margin-top:12px; font-size:14.5px; line-height:1.9;}
 .explain.show{display:block;}
 .explain.ok{background:var(--green-bg); border:1px solid var(--green);}
 .explain.no{background:var(--red-bg); border:1px solid var(--red);}
-.explain b{color:var(--burg);}
-.model{display:none; background:var(--warm); border:1px solid #e5c9c0; border-radius:10px; padding:12px 14px; margin-top:12px; font-size:14.5px; line-height:1.9; white-space:pre-line;}
+.explain b{color:var(--navy);}
+.model{display:none; background:var(--pale2); border:1px solid #B9CBDD; border-radius:10px; padding:12px 14px; margin-top:12px; font-size:14.5px; line-height:1.9; white-space:pre-line;}
 .model.show{display:block;}
-textarea{width:100%; min-height:90px; border:1.5px solid #e5d5c8; border-radius:12px; padding:12px; font-family:inherit; font-size:15px; margin-top:14px; direction:ltr;}
+textarea{width:100%; min-height:90px; border:1.5px solid #C9D9E8; border-radius:12px; padding:12px; font-family:inherit; font-size:15px; margin-top:14px; direction:ltr;}
 /* results */
 .score-ring{width:150px; height:150px; margin:10px auto; position:relative;}
 .score-ring svg{transform:rotate(-90deg);}
-.score-ring .pct{position:absolute; inset:0; display:flex; align-items:center; justify-content:center; font-size:34px; font-weight:800; color:var(--burg);}
+.score-ring .pct{position:absolute; inset:0; display:flex; align-items:center; justify-content:center; font-size:34px; font-weight:800; color:var(--navy);}
 .res-line{text-align:center; font-size:16px; line-height:2;}
-.res-line b{color:var(--burg);}
+.res-line b{color:var(--navy);}
 table.res{width:100%; border-collapse:collapse; margin-top:12px; font-size:14px;}
-table.res td, table.res th{border:1px solid #ead9c9; padding:8px; text-align:center;}
-table.res th{background:var(--burg); color:#fff;}
+table.res td, table.res th{border:1px solid #C9D9E8; padding:8px; text-align:center;}
+table.res th{background:var(--navy); color:#fff;}
 .hidden{display:none !important;}
 footer{text-align:center; font-size:12px; color:var(--mut); margin-top:26px; line-height:1.8;}
 /* O.Nursing — QR-only: no copying, no printing */
 body{ -webkit-user-select:none; -moz-user-select:none; -ms-user-select:none; user-select:none; }
 textarea{ -webkit-user-select:text; -moz-user-select:text; -ms-user-select:text; user-select:text; }
 #print-note{ display:none; }
-@media print{ body *{ display:none !important; } #print-note{ display:block !important; text-align:center; font-size:16px; font-weight:700; color:#7c2d3e; margin-top:40%; } }
+@media print{ body *{ display:none !important; } #print-note{ display:block !important; text-align:center; font-size:16px; font-weight:700; color:#1B3A5C; margin-top:40%; } }
 
 /* flashcards + special sections (Module 1) */
-.fcard{border:1.5px solid #e5d5c8; background:#fff; border-radius:12px; padding:12px 14px; margin-top:10px; cursor:pointer;}
-.fcard:hover{border-color:var(--gold);}
+.fcard{border:1.5px solid #C9D9E8; background:#fff; border-radius:12px; padding:12px 14px; margin-top:10px; cursor:pointer;}
+.fcard:hover{border-color:var(--sky);}
 .fcard .fq{font-weight:700; font-size:16px; line-height:1.7; direction:ltr; text-align:left;}
 .fcard .ftap{font-size:12.5px; color:var(--mut); margin-top:6px;}
 .fcard .model{margin-top:10px;}
-.fcard .src{font-size:12.5px; color:var(--mut); margin-top:8px; line-height:1.7; direction:ltr; text-align:left;}
-.fcard .src a{color:var(--burg); word-break:break-all;}
-h2.sec{font-size:17px; color:var(--burg); margin-top:20px; line-height:1.6;}
+.fcard .fcsrc{margin-top:8px; direction:ltr; text-align:left;}
+h2.sec{font-size:17px; color:var(--navy); margin-top:22px; line-height:1.6; border-bottom:2px solid var(--pale); padding-bottom:6px;}
 h2.sec .en{font-size:13px; color:var(--mut); display:block; font-weight:500;}
+h2.sec:first-of-type{margin-top:14px;}
+.secnote{font-size:13px; color:var(--mut); margin-top:6px; line-height:1.8;}
 .am-opts{margin-top:8px; padding-inline-start:22px; direction:ltr; text-align:left; line-height:1.8; font-size:15px;}
 .am-opts li{margin-top:2px;}
-.showbtn{background:var(--gold-l); color:var(--burg-d); border:1px solid var(--gold); border-radius:10px; padding:8px 14px; font-size:14px; font-weight:700; cursor:pointer; font-family:inherit; margin-top:10px;}
+.showbtn{background:var(--pale); color:var(--navy-d); border:1px solid var(--sky); border-radius:10px; padding:8px 14px; font-size:14px; font-weight:700; cursor:pointer; font-family:inherit; margin-top:10px;}
 </style>
 </head>
 <body>
 <div class="wrap">
   <header>
     <div class="brand"><span class="star">✦</span> O<span class="dot">.</span>Nursing <span class="star">✦</span></div>
-    <div class="sub">بنك أسئلة — Module 1 • Reproductive Biology • تمريض النسا والتوليد</div>
+    <div class="sub">Special Notes — Module 1 • Reproductive Biology • تمريض النسا والتوليد</div>
     <div class="rule"></div>
   </header>
 
@@ -118,6 +132,20 @@ h2.sec .en{font-size:13px; color:var(--mut); display:block; font-weight:500;}
       <span class="pill soft">+ 43 بطاقة مراجعة مقالية</span>
     </div>
     <p style="margin-top:12px; font-size:14.5px; line-height:1.9;">أسئلة إضافية شاملة كل أفكار الموديول الأول: الجهاز التناسلي الأنثوي (خارجي وداخلي)، الدورة الشهرية ومحور Hypothalamus–Pituitary–Ovarian، والصحة الإنجابية — مع <b>تلميح</b> لكل سؤال وشرح بعد الإجابة. تحت الاختبار هتلاقي <b>بطاقات المراجعة</b> (تعريفات ووظائف وقوائم) و<b>أسئلة Special O.Nursing</b> من البنوك الأمريكية.</p>
+    <div class="jumpnav">
+      <a href="#quiz-anchor">١ — الاختبار<span>30 سؤال • متدرج</span></a>
+      <a href="#flashcards">٢ — بطاقات المراجعة<span>43 بطاقة مقالية</span></a>
+      <a href="#special">٣ — Special O.Nursing<span>57 سؤال أمريكي</span></a>
+    </div>
+    <div class="legend"><b>مصادر الأسئلة:</b> كل سؤال مكتوب عليه مصدره —
+      <span class="srctag">البنك المشترك</span> نسخة موحدة من بنوك المنصورة وطنطا وبنك 2024 وبنك طه حسني (المحلولة) •
+      <span class="srctag">بنك الإسكندرية 2023/2024</span> د. ميرفت خضراوي •
+      <span class="srctag">بنك طنطا 2021/2022</span> •
+      <span class="srctag">امتحانات بورسعيد 2025/2026</span> •
+      <span class="srctag">بنك إمبابة</span> •
+      <span class="srctag">أسئلة Module I — نسا 1</span> •
+      <span class="srctag special">Special O.Nursing Questions</span> من البنوك الأمريكية.
+    </div>
     <div class="levels" id="levels">
       <button class="lvl on" data-lvl="all">الكل (30)</button>
       <button class="lvl" data-lvl="easy">سهل (16)</button>
@@ -130,10 +158,12 @@ h2.sec .en{font-size:13px; color:var(--mut); display:block; font-weight:500;}
   </div>
 
   <!-- QUIZ -->
+  <div id="quiz-anchor"></div>
   <div id="quiz" class="card hidden">
     <div class="prog"><i id="prog-fill"></i></div>
     <div class="qtop"><span id="q-count"></span><span id="q-badge"></span><span id="q-score"></span></div>
     <div class="q" id="q-stem"></div>
+    <div class="qsrc" id="q-src"></div>
     <div id="q-body"></div>
     <button class="hintbtn" id="btn-hint">💡 تلميح</button>
     <div class="hint" id="q-hint"></div>
@@ -148,8 +178,8 @@ h2.sec .en{font-size:13px; color:var(--mut); display:block; font-weight:500;}
     <h1>النتيجة</h1>
     <div class="score-ring">
       <svg width="150" height="150" viewBox="0 0 150 150">
-        <circle cx="75" cy="75" r="65" fill="none" stroke="#eee" stroke-width="10"/>
-        <circle id="ring-fg" cx="75" cy="75" r="65" fill="none" stroke="#7C2D3E" stroke-width="10" stroke-linecap="round" stroke-dasharray="408" stroke-dashoffset="408"/>
+        <circle cx="75" cy="75" r="65" fill="none" stroke="#DCE8F2" stroke-width="10"/>
+        <circle id="ring-fg" cx="75" cy="75" r="65" fill="none" stroke="#1B3A5C" stroke-width="10" stroke-linecap="round" stroke-dasharray="408" stroke-dashoffset="408"/>
       </svg>
       <div class="pct" id="res-pct">0%</div>
     </div>
@@ -163,21 +193,26 @@ h2.sec .en{font-size:13px; color:var(--mut); display:block; font-weight:500;}
   <!-- FLASHCARDS -->
   <div id="flashcards" class="card">
     <h1>بطاقات المراجعة — الأسئلة المقالية<span class="en">Flashcards — Define, Functions &amp; Lists (43 cards)</span></h1>
-    <p style="margin-top:12px; font-size:14.5px; line-height:1.9;">اضغط على أي بطاقة عشان تشوف الإجابة النموذجية — جاوب لنفسك الأول، وبعدين اكشف الإجابة وقارن. البطاقات دي مش محسوبة في النتيجة.</p>
+    <p style="margin-top:12px; font-size:14.5px; line-height:1.9;">اضغط على أي بطاقة عشان تشوف الإجابة النموذجية — جاوب لنفسك الأول، وبعدين اكشف الإجابة وقارن. البطاقات دي مش محسوبة في النتيجة. متقسمة زي ملفات الفلاش كاردز: تعريفات، وظائف، وقوائم.</p>
+    <h2 class="sec">تعريفات وملاحظات قصيرة<span class="en">Define / Short notes — 20 cards</span></h2>
+    <div id="fc-define"></div>
+    <h2 class="sec">وظائف وأهمية<span class="en">Function / Importance — 14 cards</span></h2>
+    <div id="fc-func"></div>
+    <h2 class="sec">قوائم<span class="en">List / Enumerate — 9 cards</span></h2>
     <div id="fc-list"></div>
   </div>
 
   <!-- SPECIAL O.NURSING QUESTIONS (American bank) -->
   <div id="special" class="card">
-    <h1>Special O.Nursing Questions — American Bank<span class="en">أسئلة من البنوك الأمريكية (Perry / Lowdermilk) — خارج الاختبار المصري</span></h1>
-    <p style="margin-top:12px; font-size:14.5px; line-height:1.9;">أسئلة إضافية من البنوك الأمريكية لنفس الموديول، منفصلة عن الاختبار المصري فوق — مش محسوبة في النتيجة. كل سؤال فيه لينك المصدر بتاعه.</p>
+    <h1>Special O.Nursing Questions — American Bank<span class="en">أسئلة من البنوك الأمريكية لنفس الموديول — خارج الاختبار المصري</span></h1>
+    <p style="margin-top:12px; font-size:14.5px; line-height:1.9;">أسئلة إضافية من البنوك الأمريكية لنفس الموديول، منفصلة عن الاختبار المصري فوق — مش محسوبة في النتيجة.</p>
     <h2 class="sec">أسئلة اختيار من متعدد (15 سؤال)<span class="en">Verbatim 4-option MCQs — tap to reveal the answer</span></h2>
     <div id="am-mcq"></div>
     <h2 class="sec">أسئلة وإجابات — Q&amp;A / Fill-in (42 سؤال)<span class="en">Tap any card to reveal the answer</span></h2>
     <div id="am-qa"></div>
   </div>
 
-  <footer>O.Nursing • Dr: Abdullah Shawky<br>الأسئلة من محتوى المحاضرة وأسئلة امتحانات دبلوم المعاهد الفنية الصحية<br><b style="color:#7c2d3e;">الأسئلة خاصة بـ O.Nursing — ممنوع النسخ والنقل</b></footer>
+  <footer>O.Nursing • Dr: Abdullah Shawky<br>الأسئلة من محتوى المحاضرة وأسئلة امتحانات دبلوم المعاهد الفنية الصحية<br><b style="color:#1B3A5C;">الأسئلة خاصة بـ O.Nursing — ممنوع النسخ والنقل</b></footer>
   <div id="print-note">الأسئلة خاصة بـ O.Nursing — ممنوع النسخ والنقل</div>
 </div>
 
@@ -196,7 +231,8 @@ const QUESTIONS = [
   ],
   "correct": 1,
   "hint": "Ampulla belongs to the fallopian tube, not the uterus.",
-  "explain": "The divisions of the uterus are the cervix, isthmus, corpus (body), cornua, fundus and cavity. The <b>ampulla</b> is a part of the fallopian tube — the widened area where fertilization occurs."
+  "explain": "The divisions of the uterus are the cervix, isthmus, corpus (body), cornua, fundus and cavity. The <b>ampulla</b> is a part of the fallopian tube — the widened area where fertilization occurs.",
+  "src": "البنك المشترك"
  },
  {
   "id": "M7",
@@ -211,7 +247,8 @@ const QUESTIONS = [
   ],
   "correct": 3,
   "hint": "All three happen together when there is no fertilization.",
-  "explain": "If fertilization does not occur there is no HCG, the <b>corpus luteum degenerates</b>, <b>estrogen and progesterone levels fall</b>, and <b>menstruation occurs</b> — so all of the above."
+  "explain": "If fertilization does not occur there is no HCG, the <b>corpus luteum degenerates</b>, <b>estrogen and progesterone levels fall</b>, and <b>menstruation occurs</b> — so all of the above.",
+  "src": "البنك المشترك"
  },
  {
   "id": "M9",
@@ -226,7 +263,8 @@ const QUESTIONS = [
   ],
   "correct": 3,
   "hint": "The ovary makes two steroid hormones.",
-  "explain": "The Graafian follicle and the corpus luteum produce <b>estrogen and progesterone</b>. FSH and LH come from the pituitary, not the ovary."
+  "explain": "The Graafian follicle and the corpus luteum produce <b>estrogen and progesterone</b>. FSH and LH come from the pituitary, not the ovary.",
+  "src": "البنك المشترك"
  },
  {
   "id": "M15",
@@ -241,7 +279,8 @@ const QUESTIONS = [
   ],
   "correct": 2,
   "hint": "Check the cycle length (25–32 days) and which phase lasts 9 days.",
-  "explain": "Answer derived from the summary, no answer key in the source bank. The menstrual cycle occurs every <b>25–32 days</b>; the proliferative phase lasts <b>9 days</b> (about days 5–14); the secretory phase begins with ovulation. If pregnancy does not occur, the endometrium enters the ischemic phase and the <b>menstrual phase occurs</b>."
+  "explain": "Answer derived from the summary, no answer key in the source bank. The menstrual cycle occurs every <b>25–32 days</b>; the proliferative phase lasts <b>9 days</b> (about days 5–14); the secretory phase begins with ovulation. If pregnancy does not occur, the endometrium enters the ischemic phase and the <b>menstrual phase occurs</b>.",
+  "src": "بنك الإسكندرية 2023/2024"
  },
  {
   "id": "M16",
@@ -256,7 +295,8 @@ const QUESTIONS = [
   ],
   "correct": 2,
   "hint": "Think of the vagina's neighbours: bladder in front, rectum behind.",
-  "explain": "The <b>bladder is anterior and the rectum is posterior</b> — so statement (c) is reversed and is the incorrect one. The uterus is a hollow muscular thick-walled organ, its main functions are pregnancy and labor, and it is divided into fundus, body and cervix."
+  "explain": "The <b>bladder is anterior and the rectum is posterior</b> — so statement (c) is reversed and is the incorrect one. The uterus is a hollow muscular thick-walled organ, its main functions are pregnancy and labor, and it is divided into fundus, body and cervix.",
+  "src": "بنك الإسكندرية 2023/2024"
  },
  {
   "id": "M19",
@@ -272,7 +312,8 @@ const QUESTIONS = [
   ],
   "correct": 3,
   "hint": "The corpus luteum runs this phase — what does it secrete most?",
-  "explain": "Answer derived from the summary, no answer key in the source bank. The secretory phase is <b>progesterone</b>-dominated: the corpus luteum secretes progesterone and a little estrogen. Option (e) is a plausible distractor, but the phase is described as under the effect of progesterone."
+  "explain": "Answer derived from the summary, no answer key in the source bank. The secretory phase is <b>progesterone</b>-dominated: the corpus luteum secretes progesterone and a little estrogen. Option (e) is a plausible distractor, but the phase is described as under the effect of progesterone.",
+  "src": "بنك الإسكندرية 2023/2024"
  },
  {
   "id": "M21",
@@ -287,7 +328,8 @@ const QUESTIONS = [
   ],
   "correct": 0,
   "hint": "It is a 'sign' named after a person.",
-  "explain": "Bluish discoloration of the cervix, vagina and labia during pregnancy, as a result of vascular congestion, is <b>Chadwick's sign</b>. (Note: the original option list was only partially legible in the source bank, so the four options here are written from the Fact Sheet terms; the correct answer is Chadwick's sign.)"
+  "explain": "Bluish discoloration of the cervix, vagina and labia during pregnancy, as a result of vascular congestion, is <b>Chadwick's sign</b>. (Note: the original option list was only partially legible in the source bank, so the four options here are written from the Fact Sheet terms; the correct answer is Chadwick's sign.)",
+  "src": "بنك طنطا 2021/2022"
  },
  {
   "id": "M22",
@@ -302,7 +344,8 @@ const QUESTIONS = [
   ],
   "correct": 0,
   "hint": "The widest part is also where fertilization happens.",
-  "explain": "The <b>ampulla</b> is the widened lateral area of the tube (5 cm) where fertilization normally occurs. The isthmus is the narrowest part; the endometrium is a uterine layer, not a tube part."
+  "explain": "The <b>ampulla</b> is the widened lateral area of the tube (5 cm) where fertilization normally occurs. The isthmus is the narrowest part; the endometrium is a uterine layer, not a tube part.",
+  "src": "امتحانات بورسعيد 2025/2026"
  },
  {
   "id": "M23",
@@ -317,7 +360,8 @@ const QUESTIONS = [
   ],
   "correct": 3,
   "hint": "Same fact as the shared-bank version — the ovary's two hormones.",
-  "explain": "The Graafian follicle and the corpus luteum produce <b>estrogen and progesterone</b>. FSH and LH are pituitary hormones; testosterone is not an ovarian hormone here."
+  "explain": "The Graafian follicle and the corpus luteum produce <b>estrogen and progesterone</b>. FSH and LH are pituitary hormones; testosterone is not an ovarian hormone here.",
+  "src": "امتحانات بورسعيد 2025/2026"
  },
  {
   "id": "M25",
@@ -332,7 +376,8 @@ const QUESTIONS = [
   ],
   "correct": 2,
   "hint": "Day 14 of a 28-day cycle.",
-  "explain": "Ovulation occurs at the <b>middle of the menstrual cycle</b> — about day 14 in a 28-day cycle — when the mature ovum is expelled from the ruptured Graafian follicle."
+  "explain": "Ovulation occurs at the <b>middle of the menstrual cycle</b> — about day 14 in a 28-day cycle — when the mature ovum is expelled from the ruptured Graafian follicle.",
+  "src": "امتحانات بورسعيد 2025/2026"
  },
  {
   "id": "T2",
@@ -341,7 +386,8 @@ const QUESTIONS = [
   "q": "Vagina is a passageway for the menstrual flow.",
   "correct": true,
   "hint": "One of the four functions of the vagina.",
-  "explain": "TRUE — one of the functions of the vagina is to be the passageway for the menstrual flow (and for uterine secretions, and the birth canal during labor)."
+  "explain": "TRUE — one of the functions of the vagina is to be the passageway for the menstrual flow (and for uterine secretions, and the birth canal during labor).",
+  "src": "البنك المشترك"
  },
  {
   "id": "T4",
@@ -350,7 +396,8 @@ const QUESTIONS = [
   "q": "Perineum is the muscle and tissue located between vaginal opening and anal canal.",
   "correct": true,
   "hint": "Between the vaginal opening and the anus.",
-  "explain": "TRUE — the perineum lies between the vaginal opening and the anal canal and supports and surrounds the lower parts of the urinary and digestive tracts."
+  "explain": "TRUE — the perineum lies between the vaginal opening and the anal canal and supports and surrounds the lower parts of the urinary and digestive tracts.",
+  "src": "البنك المشترك"
  },
  {
   "id": "T6",
@@ -359,7 +406,8 @@ const QUESTIONS = [
   "q": "The urethral meatus is situated 5 cm below the clitoris.",
   "correct": false,
   "hint": "The real distance is 2.5 cm — and it is posterior, not below.",
-  "explain": "FALSE — the urethral opening lies <b>2.5 cm posterior to the clitoris</b>, and its length is 4 cm."
+  "explain": "FALSE — the urethral opening lies <b>2.5 cm posterior to the clitoris</b>, and its length is 4 cm.",
+  "src": "البنك المشترك"
  },
  {
   "id": "T8",
@@ -368,7 +416,8 @@ const QUESTIONS = [
   "q": "The placenta secretes FSH & LH hormone.",
   "correct": false,
   "hint": "FSH and LH come from the pituitary.",
-  "explain": "FALSE — FSH and LH are secreted by the <b>pituitary gland</b> (stimulated by GnRH from the hypothalamus)."
+  "explain": "FALSE — FSH and LH are secreted by the <b>pituitary gland</b> (stimulated by GnRH from the hypothalamus).",
+  "src": "البنك المشترك"
  },
  {
   "id": "T9",
@@ -377,7 +426,8 @@ const QUESTIONS = [
   "q": "The most common elements of reproductive health are women nutrition, management of infertility and family planning services.",
   "correct": true,
   "hint": "As listed in the answered bank.",
-  "explain": "TRUE — women nutrition, management of infertility and family planning services are listed as the most common elements of reproductive health."
+  "explain": "TRUE — women nutrition, management of infertility and family planning services are listed as the most common elements of reproductive health.",
+  "src": "البنك المشترك"
  },
  {
   "id": "T11",
@@ -386,7 +436,8 @@ const QUESTIONS = [
   "q": "FSH & LH produce cyclic changes in ovaries.",
   "correct": true,
   "hint": "The ovarian cycle has three phases — driven by FSH and LH.",
-  "explain": "TRUE — FSH and LH produce cyclic changes in the ovaries (follicular, ovulatory and luteal phases)."
+  "explain": "TRUE — FSH and LH produce cyclic changes in the ovaries (follicular, ovulatory and luteal phases).",
+  "src": "البنك المشترك"
  },
  {
   "id": "T12",
@@ -395,7 +446,8 @@ const QUESTIONS = [
   "q": "Menstrual cycle contains luteal phase.",
   "correct": false,
   "hint": "Luteal belongs to the other cycle — which one?",
-  "explain": "FALSE — the <b>luteal phase belongs to the ovarian cycle</b>. The menstrual (uterine) cycle phases are menstrual, proliferative, secretory and ischemic."
+  "explain": "FALSE — the <b>luteal phase belongs to the ovarian cycle</b>. The menstrual (uterine) cycle phases are menstrual, proliferative, secretory and ischemic.",
+  "src": "البنك المشترك"
  },
  {
   "id": "T13",
@@ -404,7 +456,8 @@ const QUESTIONS = [
   "q": "Proliferative phase is controlled by estrogen secreted by follicles.",
   "correct": true,
   "hint": "The phase of repair — 9 days — under estrogen.",
-  "explain": "TRUE — the proliferative phase is the phase of repair and proliferation, lasts 9 days, and is controlled by estrogen secreted by the follicles."
+  "explain": "TRUE — the proliferative phase is the phase of repair and proliferation, lasts 9 days, and is controlled by estrogen secreted by the follicles.",
+  "src": "البنك المشترك"
  },
  {
   "id": "T14",
@@ -413,7 +466,8 @@ const QUESTIONS = [
   "q": "The pituitary hormone that stimulates the ovary at the start of menstrual cycle is Luteinizing hormone (L.H.).",
   "correct": false,
   "hint": "FSH starts the cycle; LH triggers ovulation.",
-  "explain": "FALSE — it is <b>FSH</b> that stimulates the ovary at the start of the cycle (ovum maturation in the follicles); LH triggers ovulation."
+  "explain": "FALSE — it is <b>FSH</b> that stimulates the ovary at the start of the cycle (ovum maturation in the follicles); LH triggers ovulation.",
+  "src": "بنك الإسكندرية 2023/2024"
  },
  {
   "id": "T15",
@@ -422,7 +476,8 @@ const QUESTIONS = [
   "q": "Infundibulum is the part of fallopian tube where fertilization takes place.",
   "correct": false,
   "hint": "Fertilization happens in the widened part — the ampulla.",
-  "explain": "FALSE — fertilization takes place in the <b>ampulla</b>. The infundibulum is the trumpet-shaped outer end of the tube (2 cm)."
+  "explain": "FALSE — fertilization takes place in the <b>ampulla</b>. The infundibulum is the trumpet-shaped outer end of the tube (2 cm).",
+  "src": "بنك الإسكندرية 2023/2024"
  },
  {
   "id": "T16",
@@ -431,7 +486,8 @@ const QUESTIONS = [
   "q": "Bartholin's glands are located on either side of urethral meatus.",
   "correct": false,
   "hint": "Bartholin's = vaginal orifice; Skene's = urethral opening.",
-  "explain": "FALSE — Bartholin's glands lie on either side of the <b>vaginal orifice</b>. The glands on either side of the urethral opening are Skene's glands."
+  "explain": "FALSE — Bartholin's glands lie on either side of the <b>vaginal orifice</b>. The glands on either side of the urethral opening are Skene's glands.",
+  "src": "بنك الإسكندرية 2023/2024"
  },
  {
   "id": "T18",
@@ -440,7 +496,8 @@ const QUESTIONS = [
   "q": "Bartholin's glands secrete thick mucus that supplies lubrication for intercourse and enhances the viability and motility of the sperm.",
   "correct": true,
   "hint": "Clear, thick, alkaline mucus.",
-  "explain": "TRUE — Bartholin's glands secrete clear, thick, alkaline mucus that lubricates intercourse and enhances sperm viability and motility."
+  "explain": "TRUE — Bartholin's glands secrete clear, thick, alkaline mucus that lubricates intercourse and enhances sperm viability and motility.",
+  "src": "بنك الإسكندرية 2023/2024"
  },
  {
   "id": "T19",
@@ -449,7 +506,8 @@ const QUESTIONS = [
   "q": "The labia minora lie just inside the labia majora and surround the openings of vagina & urethra.",
   "correct": true,
   "hint": "Inner lips, inside the outer lips.",
-  "explain": "TRUE — the labia minora (inner, lesser lips) lie inside the labia majora and surround the vaginal and urethral openings."
+  "explain": "TRUE — the labia minora (inner, lesser lips) lie inside the labia majora and surround the vaginal and urethral openings.",
+  "src": "بنك الإسكندرية 2023/2024"
  },
  {
   "id": "T20",
@@ -458,7 +516,8 @@ const QUESTIONS = [
   "q": "Clitoris allows the women to experience sexual pleasure & orgasm during sexual stimulation.",
   "correct": true,
   "hint": "Very rich in blood and nerve supply.",
-  "explain": "TRUE — the clitoris, very rich in blood and nerve supply, allows women to experience sexual pleasure and orgasm during sexual stimulation."
+  "explain": "TRUE — the clitoris, very rich in blood and nerve supply, allows women to experience sexual pleasure and orgasm during sexual stimulation.",
+  "src": "بنك الإسكندرية 2023/2024"
  },
  {
   "id": "T21",
@@ -467,7 +526,8 @@ const QUESTIONS = [
   "q": "The female reproductive cycle is composed of menstrual cycle only.",
   "correct": false,
   "hint": "Two cycles make up the reproductive cycle.",
-  "explain": "FALSE — the female reproductive cycle is composed of <b>two cycles</b>: the menstrual (uterine) cycle and the ovarian cycle."
+  "explain": "FALSE — the female reproductive cycle is composed of <b>two cycles</b>: the menstrual (uterine) cycle and the ovarian cycle.",
+  "src": "بنك الإسكندرية 2023/2024"
  },
  {
   "id": "T23",
@@ -476,7 +536,8 @@ const QUESTIONS = [
   "q": "From reproductive health rights: right to life, liberty and security.",
   "correct": true,
   "hint": "One of the listed reproductive health rights.",
-  "explain": "TRUE — the right to life, liberty and security is one of the reproductive health rights."
+  "explain": "TRUE — the right to life, liberty and security is one of the reproductive health rights.",
+  "src": "بنك الإسكندرية 2023/2024"
  },
  {
   "id": "T24",
@@ -485,7 +546,8 @@ const QUESTIONS = [
   "q": "Using any form of warm application may be beneficial during painful periods of menstruation.",
   "correct": true,
   "hint": "Heat and massage help painful periods.",
-  "explain": "TRUE — using any form of warm application (heat) and massage may be beneficial during painful periods of menstruation."
+  "explain": "TRUE — using any form of warm application (heat) and massage may be beneficial during painful periods of menstruation.",
+  "src": "بنك الإسكندرية 2023/2024"
  },
  {
   "id": "T25",
@@ -494,7 +556,8 @@ const QUESTIONS = [
   "q": "Calcium may provide relief from menstrual symptoms.",
   "correct": true,
   "hint": "Calcium is in yogurt and cheese.",
-  "explain": "TRUE — calcium (present in yogurt and cheese) may provide relief from menstrual symptoms."
+  "explain": "TRUE — calcium (present in yogurt and cheese) may provide relief from menstrual symptoms.",
+  "src": "بنك الإسكندرية 2023/2024"
  },
  {
   "id": "T26",
@@ -503,7 +566,8 @@ const QUESTIONS = [
   "q": "Ovulation is outward expulsion of a mature ovum from a ruptured Graafian follicle.",
   "correct": true,
   "hint": "The definition of ovulation, word for word.",
-  "explain": "TRUE — ovulation is the outward expulsion of a mature ovum from a ruptured Graafian follicle, about day 14 of a 28-day cycle."
+  "explain": "TRUE — ovulation is the outward expulsion of a mature ovum from a ruptured Graafian follicle, about day 14 of a 28-day cycle.",
+  "src": "بنك الإسكندرية 2023/2024"
  },
  {
   "id": "T27",
@@ -512,7 +576,8 @@ const QUESTIONS = [
   "q": "If the oocyte is fertilized the corpus luteum remains active for 20 weeks of gestation.",
   "correct": true,
   "hint": "20 weeks — the corpus luteum stays on the job.",
-  "explain": "TRUE — if the oocyte is fertilized, the corpus luteum enlarges and remains active for the first <b>20 weeks</b> of pregnancy."
+  "explain": "TRUE — if the oocyte is fertilized, the corpus luteum enlarges and remains active for the first <b>20 weeks</b> of pregnancy.",
+  "src": "بنك طنطا 2021/2022"
  },
  {
   "id": "D1",
@@ -521,7 +586,8 @@ const QUESTIONS = [
   "q": "Define: Menarche.",
   "model": "The onset of menstruation; signals the bodily changes that transform a female body.\nAverage age: 12.8 years.",
   "hint": "The first menstruation — at what average age?",
-  "explain": "Menarche is the onset of menstruation (average age 12.8 years)."
+  "explain": "Menarche is the onset of menstruation (average age 12.8 years).",
+  "src": "أسئلة Module I — نسا 1"
  },
  {
   "id": "D2",
@@ -530,7 +596,8 @@ const QUESTIONS = [
   "q": "Define: Menstrual cycle.",
   "model": "Cyclic changes in the endometrium caused by estrogen and progesterone.\nUsually occurs every 25 to 32 days.",
   "hint": "Changes in the endometrium, caused by two hormones.",
-  "explain": "The menstrual cycle is the cyclic changes in the endometrium caused by estrogen and progesterone."
+  "explain": "The menstrual cycle is the cyclic changes in the endometrium caused by estrogen and progesterone.",
+  "src": "أسئلة Module I — نسا 1"
  },
  {
   "id": "D3",
@@ -539,7 +606,8 @@ const QUESTIONS = [
   "q": "Define: Negative feedback mechanism.",
   "model": "Each hormone is secreted until the organ it acts on secretes a hormone that reduces secretion of the first hormone.",
   "hint": "A hormone switches off the hormone that switched it on.",
-  "explain": "Negative feedback: each hormone is secreted until the organ it acts on secretes a hormone that reduces secretion of the first hormone."
+  "explain": "Negative feedback: each hormone is secreted until the organ it acts on secretes a hormone that reduces secretion of the first hormone.",
+  "src": "أسئلة Module I — نسا 1"
  },
  {
   "id": "D4",
@@ -548,7 +616,8 @@ const QUESTIONS = [
   "q": "Define: Proliferative phase.",
   "model": "A phase of repair and proliferation.\nLasts 9 days; controlled by estrogen secreted by follicles; the endometrium thickness increases 2–3 mm; glands increase in number and length and the spiral artery elongates.",
   "hint": "Repair phase — 9 days, under estrogen.",
-  "explain": "The proliferative phase is the phase of repair and proliferation (9 days, estrogen-controlled)."
+  "explain": "The proliferative phase is the phase of repair and proliferation (9 days, estrogen-controlled).",
+  "src": "أسئلة Module I — نسا 1"
  },
  {
   "id": "D5",
@@ -557,7 +626,8 @@ const QUESTIONS = [
   "q": "Define: Secretory phase.",
   "model": "Begins with ovulation and ends with menstruation; the spiral artery grows into the superficial layer.\nIf fertilization occurs, the fertilized ovum implants in the endometrium on the 6th day of this phase, and HCG keeps the corpus luteum secreting estrogen and progesterone.",
   "hint": "Starts with ovulation, ends with menstruation.",
-  "explain": "The secretory phase begins with ovulation and ends with menstruation."
+  "explain": "The secretory phase begins with ovulation and ends with menstruation.",
+  "src": "أسئلة Module I — نسا 1"
  },
  {
   "id": "D6",
@@ -566,7 +636,8 @@ const QUESTIONS = [
   "q": "Define: Ischemic phase.",
   "model": "Decreased estrogen and progesterone; stoppage of glandular secretion; loss of interstitial fluid; venous stasis; ischemic necrosis; rupture of vessel wall; blood seeps into surrounding tissue.",
   "hint": "The phase of falling hormones and blocked blood supply.",
-  "explain": "The ischemic phase follows the fall of estrogen and progesterone when no fertilization occurs."
+  "explain": "The ischemic phase follows the fall of estrogen and progesterone when no fertilization occurs.",
+  "src": "أسئلة Module I — نسا 1"
  },
  {
   "id": "D7",
@@ -575,7 +646,8 @@ const QUESTIONS = [
   "q": "Define: Follicular phase.",
   "model": "Primordial follicles start to grow under the effect of FSH; only one reaches maturity and is called the Graafian follicle; the grown follicle secretes estrogen.",
   "hint": "FSH grows the follicles; one becomes Graafian.",
-  "explain": "The follicular phase: primordial follicles grow under FSH; one matures into the Graafian follicle."
+  "explain": "The follicular phase: primordial follicles grow under FSH; one matures into the Graafian follicle.",
+  "src": "أسئلة Module I — نسا 1"
  },
  {
   "id": "D8",
@@ -584,7 +656,8 @@ const QUESTIONS = [
   "q": "Define: Ovulation.",
   "model": "Outward expulsion of a mature ovum from a ruptured Graafian follicle.\nOccurs around mid-cycle, about day 14 in a 28-day menstrual cycle.",
   "hint": "Day 14 — the ovum leaves the follicle.",
-  "explain": "Ovulation is the outward expulsion of a mature ovum from a ruptured Graafian follicle (about day 14)."
+  "explain": "Ovulation is the outward expulsion of a mature ovum from a ruptured Graafian follicle (about day 14).",
+  "src": "أسئلة Module I — نسا 1"
  },
  {
   "id": "D9",
@@ -593,7 +666,8 @@ const QUESTIONS = [
   "q": "Define: Luteal phase.",
   "model": "The ruptured Graafian follicle is termed corpus luteum; it secretes progesterone and a little estrogen, preparing the endometrium for implantation of the fertilized ovum.\nIf fertilized, the corpus luteum enlarges and remains active for the first 20 weeks of pregnancy; if not, it degenerates.",
   "hint": "After ovulation — the corpus luteum phase.",
-  "explain": "The luteal phase is the corpus luteum phase: progesterone and a little estrogen prepare the endometrium for implantation."
+  "explain": "The luteal phase is the corpus luteum phase: progesterone and a little estrogen prepare the endometrium for implantation.",
+  "src": "أسئلة Module I — نسا 1"
  },
  {
   "id": "D10",
@@ -602,7 +676,8 @@ const QUESTIONS = [
   "q": "Define: Reproductive health.",
   "model": "A status of complete physical, mental and social wellbeing, and not merely the absence of disease or disability, in all matters relating to the reproductive system and to its function and processes.",
   "hint": "Complete wellbeing — not just the absence of disease.",
-  "explain": "Reproductive health is complete physical, mental and social wellbeing in all matters relating to the reproductive system."
+  "explain": "Reproductive health is complete physical, mental and social wellbeing in all matters relating to the reproductive system.",
+  "src": "أسئلة Module I — نسا 1"
  },
  {
   "id": "D11",
@@ -611,7 +686,8 @@ const QUESTIONS = [
   "q": "Define: Episiotomy.",
   "model": "Surgical incision on the perineum and posterior vaginal wall during the second stage of labor to widen the vaginal orifice to facilitate passage of the fetus from the vagina.",
   "hint": "A surgical cut in the perineum during birth.",
-  "explain": "Episiotomy is a surgical incision of the perineum (and posterior vaginal wall) to widen the vaginal orifice during the second stage of labor."
+  "explain": "Episiotomy is a surgical incision of the perineum (and posterior vaginal wall) to widen the vaginal orifice during the second stage of labor.",
+  "src": "أسئلة Module I — نسا 1"
  },
  {
   "id": "D12",
@@ -620,7 +696,8 @@ const QUESTIONS = [
   "q": "Define: Isthmus of the uterus.",
   "model": "The narrowed construction about 7 mm thick lying between the body of the uterus and the cervix.\n(Note: the handwritten summary writes 4 mm — both values are recorded in the sources.)",
   "hint": "The narrow part between body and cervix.",
-  "explain": "The uterine isthmus is the narrowed construction between the body of the uterus and the cervix."
+  "explain": "The uterine isthmus is the narrowed construction between the body of the uterus and the cervix.",
+  "src": "أسئلة Module I — نسا 1"
  },
  {
   "id": "D13",
@@ -629,7 +706,8 @@ const QUESTIONS = [
   "q": "Define: Corpus / body of uterus.",
   "model": "Forms the upper two thirds of the uterus; that portion of the organ lying above the cervix.",
   "hint": "The upper two thirds, above the cervix.",
-  "explain": "The corpus (body) forms the upper two thirds of the uterus, above the cervix."
+  "explain": "The corpus (body) forms the upper two thirds of the uterus, above the cervix.",
+  "src": "أسئلة Module I — نسا 1"
  },
  {
   "id": "D14",
@@ -638,7 +716,8 @@ const QUESTIONS = [
   "q": "Define: Fundus (of the uterus).",
   "model": "The portion of the uterus that lies above and between the cornuae.",
   "hint": "The top of the uterus, above where the tubes enter.",
-  "explain": "The fundus is the portion of the uterus above and between the cornuae."
+  "explain": "The fundus is the portion of the uterus above and between the cornuae.",
+  "src": "أسئلة Module I — نسا 1"
  },
  {
   "id": "D15",
@@ -647,7 +726,8 @@ const QUESTIONS = [
   "q": "Define: Ampulla (of the fallopian tube).",
   "model": "The widened lateral area of the tube where fertilization normally occurs. It is 5 cm in length.",
   "hint": "The wide part — 5 cm — where fertilization happens.",
-  "explain": "The ampulla is the widened lateral area of the tube (5 cm) where fertilization normally occurs."
+  "explain": "The ampulla is the widened lateral area of the tube (5 cm) where fertilization normally occurs.",
+  "src": "أسئلة Module I — نسا 1"
  },
  {
   "id": "D16",
@@ -656,7 +736,8 @@ const QUESTIONS = [
   "q": "Define: Isthmus of the fallopian tube.",
   "model": "2.5 cm in length; the narrowest portion of the tube; acts as a reservoir for spermatozoa because the temperature is lower there than in the rest of the tube.",
   "hint": "Narrowest part, 2.5 cm — the sperm reservoir.",
-  "explain": "The tubal isthmus is the narrowest portion of the tube (2.5 cm) and acts as a reservoir for spermatozoa."
+  "explain": "The tubal isthmus is the narrowest portion of the tube (2.5 cm) and acts as a reservoir for spermatozoa.",
+  "src": "أسئلة Module I — نسا 1"
  },
  {
   "id": "D17",
@@ -665,7 +746,8 @@ const QUESTIONS = [
   "q": "Define: Perineum.",
   "model": "Muscle and tissue located between the vaginal opening and the anal canal; supports and surrounds the lower parts of the urinary and digestive tracts; contains an abundance of nerve endings, sensitive to touch.",
   "hint": "Between the vaginal opening and the anal canal.",
-  "explain": "The perineum is the muscle and tissue between the vaginal opening and the anal canal."
+  "explain": "The perineum is the muscle and tissue between the vaginal opening and the anal canal.",
+  "src": "بنك إمبابة"
  },
  {
   "id": "D18",
@@ -674,7 +756,8 @@ const QUESTIONS = [
   "q": "Define: Hymen.",
   "model": "A thin elastic membrane that tears during sexual intercourse or during the birth of the first child; vascular; varies in shape from woman to woman.\nIn virgins it partially closes the vaginal orifice.",
   "hint": "A thin elastic membrane at the vaginal orifice.",
-  "explain": "The hymen is a thin elastic membrane that partially closes the vaginal orifice in virgins."
+  "explain": "The hymen is a thin elastic membrane that partially closes the vaginal orifice in virgins.",
+  "src": "بنك طنطا 2021/2022"
  },
  {
   "id": "D19",
@@ -683,7 +766,8 @@ const QUESTIONS = [
   "q": "Short note: What happens if fertilization does NOT occur in the secretory phase?",
   "model": "If fertilization does not occur: no HCG is secreted, the corpus luteum degenerates, estrogen and progesterone levels fall, the secretory endometrium enters the ischemic phase, and menstruation occurs.",
   "hint": "No HCG — the corpus luteum dies and the hormones fall.",
-  "explain": "Without fertilization there is no HCG, the corpus luteum degenerates, hormones fall, and menstruation occurs."
+  "explain": "Without fertilization there is no HCG, the corpus luteum degenerates, hormones fall, and menstruation occurs.",
+  "src": "أسئلة Module I — نسا 1"
  },
  {
   "id": "D20",
@@ -692,7 +776,8 @@ const QUESTIONS = [
   "q": "List the signs and symptoms women may experience before menstruation.",
   "model": "Fluid retention, weight gain, cramping, mood swings, breast tenderness, diarrhea and constipation.",
   "hint": "Seven symptoms — fluid, weight, cramps, mood, breasts, bowel.",
-  "explain": "Before menstruation women can experience fluid retention, weight gain, cramping, mood swings, breast tenderness, diarrhea and constipation."
+  "explain": "Before menstruation women can experience fluid retention, weight gain, cramping, mood swings, breast tenderness, diarrhea and constipation.",
+  "src": "أسئلة Module I — نسا 1"
  },
  {
   "id": "F1",
@@ -701,7 +786,8 @@ const QUESTIONS = [
   "q": "Give the function of: Mons pubis.",
   "model": "Protects the pelvic bone, especially during sexual intercourse.",
   "hint": "It protects the bone underneath it.",
-  "explain": "The mons pubis protects the pelvic bone, especially during sexual intercourse."
+  "explain": "The mons pubis protects the pelvic bone, especially during sexual intercourse.",
+  "src": "أسئلة Module I — نسا 1"
  },
  {
   "id": "F2",
@@ -710,7 +796,8 @@ const QUESTIONS = [
   "q": "Give the function of: Labia majora.",
   "model": "Protect the structure(s) lying between them.",
   "hint": "The outer lips guard what lies between them.",
-  "explain": "The labia majora protect the structures lying between them."
+  "explain": "The labia majora protect the structures lying between them.",
+  "src": "أسئلة Module I — نسا 1"
  },
  {
   "id": "F3",
@@ -719,7 +806,8 @@ const QUESTIONS = [
   "q": "Give the function of: Clitoris.",
   "model": "Allows women to experience sexual pleasure and orgasm during sexual stimulation; very rich in blood and nerve supply.",
   "hint": "Pleasure and orgasm.",
-  "explain": "The clitoris allows women to experience sexual pleasure and orgasm during sexual stimulation."
+  "explain": "The clitoris allows women to experience sexual pleasure and orgasm during sexual stimulation.",
+  "src": "أسئلة Module I — نسا 1"
  },
  {
   "id": "F4",
@@ -728,7 +816,8 @@ const QUESTIONS = [
   "q": "Give the function of: Fallopian tubes.",
   "model": "Pathway for the ovum to the uterus; the site of fertilization by the male sperm.\nThe fertilized egg takes approximately 6 to 10 days to travel through the tube to implant in the uterine lining.",
   "hint": "Pathway + fertilization site.",
-  "explain": "The fallopian tubes carry the ovum to the uterus and are the site of fertilization."
+  "explain": "The fallopian tubes carry the ovum to the uterus and are the site of fertilization.",
+  "src": "أسئلة Module I — نسا 1"
  },
  {
   "id": "F5",
@@ -737,7 +826,8 @@ const QUESTIONS = [
   "q": "Give the function of: Hymen.",
   "model": "Partially closes the vaginal orifice in virgins; a thin elastic membrane that tears during sexual intercourse or the birth of the first child.",
   "hint": "It partly closes the vaginal opening in virgins.",
-  "explain": "The hymen partially closes the vaginal orifice in virgins."
+  "explain": "The hymen partially closes the vaginal orifice in virgins.",
+  "src": "أسئلة Module I — نسا 1"
  },
  {
   "id": "F6",
@@ -746,7 +836,8 @@ const QUESTIONS = [
   "q": "Give the function of: Bartholin's glands.",
   "model": "Secrete clear, thick, alkaline mucus; supply lubrication for intercourse; enhance the viability and motility of the sperm.",
   "hint": "Lubrication + helping the sperm.",
-  "explain": "Bartholin's glands secrete mucus that lubricates intercourse and enhances sperm viability and motility."
+  "explain": "Bartholin's glands secrete mucus that lubricates intercourse and enhances sperm viability and motility.",
+  "src": "أسئلة Module I — نسا 1"
  },
  {
   "id": "F7",
@@ -755,7 +846,8 @@ const QUESTIONS = [
   "q": "Give the function of: Perineum.",
   "model": "Supports and surrounds the lower parts of the urinary and digestive tracts; contains an abundance of nerve endings, sensitive to touch.",
   "hint": "Support + sensitivity.",
-  "explain": "The perineum supports the lower urinary and digestive tracts and is sensitive to touch."
+  "explain": "The perineum supports the lower urinary and digestive tracts and is sensitive to touch.",
+  "src": "أسئلة Module I — نسا 1"
  },
  {
   "id": "F8",
@@ -764,7 +856,8 @@ const QUESTIONS = [
   "q": "Give the function of: Ovaries.",
   "model": "Develop and expel an ovum each month; the follicles produce estrogen and progesterone, which prepare the uterus for implantation of the fertilized egg.",
   "hint": "One ovum a month + two hormones.",
-  "explain": "The ovaries develop and expel an ovum each month and produce estrogen and progesterone."
+  "explain": "The ovaries develop and expel an ovum each month and produce estrogen and progesterone.",
+  "src": "أسئلة Module I — نسا 1"
  },
  {
   "id": "F9",
@@ -773,7 +866,8 @@ const QUESTIONS = [
   "q": "Give the functions of: Vagina.",
   "model": "1) Passageway for the menstrual flow.\n2) Uterine secretions pass down through the introitus.\n3) The birth canal during labor.\n4) With the help of the two Bartholin's glands it becomes lubricated during sexual intercourse.",
   "hint": "Four functions — flow, secretions, birth, lubrication.",
-  "explain": "The vagina is the passageway for menstrual flow, the birth canal, and the route for uterine secretions."
+  "explain": "The vagina is the passageway for menstrual flow, the birth canal, and the route for uterine secretions.",
+  "src": "أسئلة Module I — نسا 1"
  },
  {
   "id": "F10",
@@ -782,7 +876,8 @@ const QUESTIONS = [
   "q": "Give the function of: Cervix.",
   "model": "Connects the uterus to the vagina; acts as a safety precaution against foreign bodies entering the uterus; dilates during childbirth to accommodate the passage of the fetus (dilation is a sign that labor has begun).",
   "hint": "Connector + guard + it dilates in labor.",
-  "explain": "The cervix connects uterus to vagina, guards against foreign bodies, and dilates in labor."
+  "explain": "The cervix connects uterus to vagina, guards against foreign bodies, and dilates in labor.",
+  "src": "أسئلة Module I — نسا 1"
  },
  {
   "id": "F11",
@@ -791,7 +886,8 @@ const QUESTIONS = [
   "q": "Give the functions of: Uterus.",
   "model": "Implantation of the fertilized ovum; nourishment for the fetus; expands during pregnancy and expels the fetus during labor.",
   "hint": "Implantation, nourishment, expulsion.",
-  "explain": "The uterus is the site of implantation, nourishes the fetus, and expels it during labor."
+  "explain": "The uterus is the site of implantation, nourishes the fetus, and expels it during labor.",
+  "src": "أسئلة Module I — نسا 1"
  },
  {
   "id": "F12",
@@ -800,7 +896,8 @@ const QUESTIONS = [
   "q": "Give the function of: Hypothalamus hormone (GnRH).",
   "model": "Stimulates the pituitary gland to produce FSH and LH.",
   "hint": "It switches on the pituitary.",
-  "explain": "GnRH from the hypothalamus stimulates the pituitary to produce FSH and LH."
+  "explain": "GnRH from the hypothalamus stimulates the pituitary to produce FSH and LH.",
+  "src": "أسئلة Module I — نسا 1"
  },
  {
   "id": "F13",
@@ -809,7 +906,8 @@ const QUESTIONS = [
   "q": "Give the function of: Follicle stimulating hormone (FSH).",
   "model": "Ovum maturation in follicles inside the ovaries; estrogen production in the ovaries.",
   "hint": "Matures the follicle + makes estrogen.",
-  "explain": "FSH matures the ovum in the follicles and drives estrogen production."
+  "explain": "FSH matures the ovum in the follicles and drives estrogen production.",
+  "src": "أسئلة Module I — نسا 1"
  },
  {
   "id": "F14",
@@ -818,7 +916,8 @@ const QUESTIONS = [
   "q": "Give the function of: Luteinizing hormone (LH).",
   "model": "Stimulates release of the mature ovum (ovulation); stimulates development of the corpus luteum to secrete progesterone and estrogen.",
   "hint": "Ovulation + corpus luteum.",
-  "explain": "LH triggers ovulation and the development of the corpus luteum."
+  "explain": "LH triggers ovulation and the development of the corpus luteum.",
+  "src": "أسئلة Module I — نسا 1"
  },
  {
   "id": "L1",
@@ -827,7 +926,8 @@ const QUESTIONS = [
   "q": "List: External genital organs.",
   "model": "1) Mons pubis\n2) Labia majora\n3) Labia minora\n4) Clitoris\n(The summaries add vestibule and perineum.)",
   "hint": "Four in the answered bank — six in the summaries.",
-  "explain": "The external genitalia are the mons pubis, labia majora, labia minora and clitoris (summaries add vestibule and perineum)."
+  "explain": "The external genitalia are the mons pubis, labia majora, labia minora and clitoris (summaries add vestibule and perineum).",
+  "src": "البنك المشترك"
  },
  {
   "id": "L2",
@@ -836,7 +936,8 @@ const QUESTIONS = [
   "q": "List: Internal genital organs.",
   "model": "1) Vagina\n2) Cervix\n3) Uterus\n4) Fallopian tubes\n5) Ovaries (the 5th in the summaries).",
   "hint": "Five organs, inside.",
-  "explain": "The internal genitalia are the vagina, cervix, uterus, fallopian tubes and ovaries."
+  "explain": "The internal genitalia are the vagina, cervix, uterus, fallopian tubes and ovaries.",
+  "src": "البنك المشترك"
  },
  {
   "id": "L3",
@@ -845,7 +946,8 @@ const QUESTIONS = [
   "q": "List: Functions of the vagina.",
   "model": "1) Passageway for the menstrual flow.\n2) Uterine secretions pass down through the introitus.\n3) The birth canal during labor.\n4) Lubricated during intercourse with the help of the Bartholin's glands.",
   "hint": "Same four as the functions question.",
-  "explain": "The vagina's functions: menstrual flow passage, secretions route, birth canal, lubrication in intercourse."
+  "explain": "The vagina's functions: menstrual flow passage, secretions route, birth canal, lubrication in intercourse.",
+  "src": "البنك المشترك"
  },
  {
   "id": "L5",
@@ -854,7 +956,8 @@ const QUESTIONS = [
   "q": "List: Divisions of the uterus.",
   "model": "1) Cervix — lower third of the uterus.\n2) Isthmus — narrowed construction between body and cervix.\n3) Corpus (body) — upper two thirds.\n4) Cornua — areas where the fallopian tubes are inserted.\n5) Fundus — above and between the cornuae.\n6) Cavity — triangular hollow shape.",
   "hint": "Six divisions, from cervix to fundus.",
-  "explain": "The uterus is divided into cervix, isthmus, corpus, cornua, fundus and cavity."
+  "explain": "The uterus is divided into cervix, isthmus, corpus, cornua, fundus and cavity.",
+  "src": "البنك المشترك"
  },
  {
   "id": "L7",
@@ -863,7 +966,8 @@ const QUESTIONS = [
   "q": "List: Phases of the ovarian cycle.",
   "model": "1) Follicular phase\n2) Ovulatory phase\n3) Luteal phase",
   "hint": "Three phases — follicular, ovulatory, luteal.",
-  "explain": "The ovarian cycle has three phases: follicular, ovulatory and luteal."
+  "explain": "The ovarian cycle has three phases: follicular, ovulatory and luteal.",
+  "src": "البنك المشترك"
  },
  {
   "id": "L9",
@@ -872,7 +976,8 @@ const QUESTIONS = [
   "q": "List: Women's reproductive health needs.",
   "model": "1) Sexuality (a continuum from sexual health).\n2) Keeping labour normal.\n3) Prevention and management of infertility.\n4) Pre-conceptional care.\n(The summary adds postnatal care and postmenopausal health care.)",
   "hint": "Four needs — sexuality, normal labour, infertility, pre-conception.",
-  "explain": "Women's reproductive health needs: sexuality, keeping labour normal, infertility prevention/management, pre-conceptional care."
+  "explain": "Women's reproductive health needs: sexuality, keeping labour normal, infertility prevention/management, pre-conceptional care.",
+  "src": "البنك المشترك"
  },
  {
   "id": "L10",
@@ -881,7 +986,8 @@ const QUESTIONS = [
   "q": "List: Men's reproductive health needs.",
   "model": "1) Sexuality.\n2) Protection against sexually transmitted diseases (STD).\n3) Prevention and management of infertility.\n4) Protection against prostatic hypertrophy and prostatic cancer.",
   "hint": "Four needs — sexuality, STD protection, infertility, prostate.",
-  "explain": "Men's reproductive health needs: sexuality, STD protection, infertility prevention, prostate protection."
+  "explain": "Men's reproductive health needs: sexuality, STD protection, infertility prevention, prostate protection.",
+  "src": "بنك طنطا 2021/2022"
  },
  {
   "id": "L11",
@@ -890,7 +996,8 @@ const QUESTIONS = [
   "q": "List: Reproductive health rights.",
   "model": "1) Right to be free from all forms of discrimination.\n2) Right to life, liberty and security.\n3) Right to marry and found a family.\n4) Right to education and information.\n5) Right to health and health care.\n6) Right to benefit from scientific progress.\n7) Right of adolescents to meet their needs.\n8) The Egyptian women work law.",
   "hint": "Eight rights.",
-  "explain": "Reproductive health rights include freedom from discrimination, life/liberty/security, marriage and family, education, health care, scientific progress, adolescents' needs, and the Egyptian women work law."
+  "explain": "Reproductive health rights include freedom from discrimination, life/liberty/security, marriage and family, education, health care, scientific progress, adolescents' needs, and the Egyptian women work law.",
+  "src": "البنك المشترك"
  },
  {
   "id": "L12",
@@ -899,7 +1006,8 @@ const QUESTIONS = [
   "q": "List: Nursing role / health teaching during the menstrual cycle.",
   "model": "Sanitary pads and tampons: wash hands before and after perineal care; wipe front to back; use pads part of the time (especially at night) instead of tampons; apply the pad snugly; do not touch the side of the pad that contacts the perineum; take warm baths often.\nDiet: less caffeine, simple sugars and salty food; six small meals a day; more fluids; avoid alcohol.\nNutritional self-care: Vitamin B complex neutralizes excess estrogen (reduces nervousness); Vitamin B6 relieves the bloated puffy feeling; Vitamin E is a mild prostaglandin inhibitor (improves circulation, reduces spasm and pain); iron prevents depletion of iron stores; calcium may relieve symptoms.\nExercise: daily exercise prevents cramps and relieves constipation; deep breathing relaxes the uterus; aerobic activity (jogging, walking) relieves irritability and tension.\nHeat and massage: warm applications help painful periods; massage soothes aching muscles and promotes relaxation and blood flow.",
   "hint": "Pads, diet, vitamins, exercise, heat and massage.",
-  "explain": "The nursing role covers perineal hygiene, diet, vitamins (B complex, B6, E, iron, calcium), exercise, and heat/massage."
+  "explain": "The nursing role covers perineal hygiene, diet, vitamins (B complex, B6, E, iron, calcium), exercise, and heat/massage.",
+  "src": "البنك المشترك"
  }
 ];
 </script>
@@ -958,6 +1066,7 @@ function renderQ(){
   $("q-badge").innerHTML = '<span class="badge '+LVLCLS[q.level]+'">'+LVL[q.level]+'</span>';
   $("q-score").textContent = "صح: " + score + " / " + answered;
   $("q-stem").innerHTML = q.q + (q.ar ? '<span class="ar-note">'+q.ar+'</span>' : "");
+  $("q-src").innerHTML = '<span class="srctag">المصدر: ' + esc(q.src || "Special Notes") + '</span>';
   $("q-hint").classList.remove("show"); $("q-hint").textContent = q.hint || "";
   $("btn-hint").style.display = q.hint ? "" : "none";
   const ex = $("q-explain"); ex.classList.remove("show","ok","no"); ex.innerHTML = "";
@@ -1078,8 +1187,7 @@ const AM_MCQ = [
   ],
   "correct": 1,
   "explain": "Most ova remain fertile for approximately 24 hours after ovulation. If unfertilized by a sperm after 24 hours, the ovum degenerates and is reabsorbed.",
-  "src": "All-in-One Test Bank (Maternity and Women's Health Care)",
-  "url": "https://www.docsity.com/en/docs/all-in-one-test-bank-maternity-and-womens-health-or-2026-verified-edition/16020645/"
+  "src": "Special O.Nursing Questions"
  },
  {
   "id": "US-B1",
@@ -1092,8 +1200,7 @@ const AM_MCQ = [
   ],
   "correct": 2,
   "explain": "Ovulation occurs about 14 days before the next period (the luteal phase is relatively constant), not on a fixed day 14 — in a 32-day cycle ovulation is around day 18.",
-  "src": "Lowdermilk, Maternity and Women's Health Care, 12th ed. Test Bank",
-  "url": "https://www.docsity.com/en/docs/maternity-and-womens-health-care-12th-edition-lowdermilk-test-bank-all-chapters-complete/13626188/"
+  "src": "Special O.Nursing Questions"
  },
  {
   "id": "US-B2",
@@ -1106,8 +1213,7 @@ const AM_MCQ = [
   ],
   "correct": 2,
   "explain": "In a 35-day cycle ovulation occurs about 14 days before the next menses, i.e. around day 21 — that is the fertile window.",
-  "src": "Lowdermilk, Maternity and Women's Health Care, 12th ed. Test Bank",
-  "url": "https://www.docsity.com/en/docs/maternity-and-womens-health-care-12th-edition-lowdermilk-test-bank-all-chapters-complete/13626188/"
+  "src": "Special O.Nursing Questions"
  },
  {
   "id": "US-C1",
@@ -1120,8 +1226,7 @@ const AM_MCQ = [
   ],
   "correct": 3,
   "explain": "The ovaries produce estrogen, progesterone and androgen, and ovulation is the release of a mature ovum from the ovary. The ovaries are not responsible for internal pelvic support.",
-  "src": "Perry, Maternal Child Nursing Care 4th ed., Ch. 5 Test Bank, Q1",
-  "url": "https://www.scribd.com/document/242278614/137762447-Chapter-005"
+  "src": "Special O.Nursing Questions"
  },
  {
   "id": "US-C2",
@@ -1134,8 +1239,7 @@ const AM_MCQ = [
   ],
   "correct": 0,
   "explain": "The uterus is the organ for reception, implantation, retention and nutrition of the fertilized ovum, and for cyclic menstruation. Hormone production and fertilization occur in the ovaries.",
-  "src": "Perry, Maternal Child Nursing Care 4th ed., Ch. 5 Test Bank, Q2",
-  "url": "https://www.scribd.com/document/242278614/137762447-Chapter-005"
+  "src": "Special O.Nursing Questions"
  },
  {
   "id": "US-C3",
@@ -1148,8 +1252,7 @@ const AM_MCQ = [
   ],
   "correct": 1,
   "explain": "The myometrium is made up of layers of smooth muscle extending in three directions; these muscles assist in the birth process by expelling the fetus, ligating blood vessels after birth, and controlling the opening of the cervical os.",
-  "src": "Perry, Maternal Child Nursing Care 4th ed., Ch. 5 Test Bank, Q5",
-  "url": "https://www.scribd.com/document/242278614/137762447-Chapter-005"
+  "src": "Special O.Nursing Questions"
  },
  {
   "id": "US-C4",
@@ -1162,8 +1265,7 @@ const AM_MCQ = [
   ],
   "correct": 3,
   "explain": "Progesterone causes maturation of the mammary gland tissue, specifically acinar structures of the lobules. Estrogen increases the vascularity of the breast tissue. Prolactin is produced after birth.",
-  "src": "Perry, Maternal Child Nursing Care 4th ed., Ch. 5 Test Bank, Q6",
-  "url": "https://www.scribd.com/document/242278614/137762447-Chapter-005"
+  "src": "Special O.Nursing Questions"
  },
  {
   "id": "US-C5",
@@ -1176,8 +1278,7 @@ const AM_MCQ = [
   ],
   "correct": 0,
   "explain": "The physiologic alterations in breast size and activity reach their minimal level about 5 to 7 days after menstruation stops; therefore all women should perform BSE during this phase.",
-  "src": "Perry, Maternal Child Nursing Care 4th ed., Ch. 5 Test Bank, Q7",
-  "url": "https://www.scribd.com/document/242278614/137762447-Chapter-005"
+  "src": "Special O.Nursing Questions"
  },
  {
   "id": "US-C6",
@@ -1190,8 +1291,7 @@ const AM_MCQ = [
   ],
   "correct": 2,
   "explain": "Menstruation is periodic uterine bleeding controlled by a feedback system involving three cycles: endometrial, hypothalamic–pituitary, and ovarian. Only the functional two-thirds of the endometrium is shed. Lack of fertilization leads to menstruation.",
-  "src": "Perry, Maternal Child Nursing Care 4th ed., Ch. 5 Test Bank, Q8",
-  "url": "https://www.scribd.com/document/242278614/137762447-Chapter-005"
+  "src": "Special O.Nursing Questions"
  },
  {
   "id": "US-C7",
@@ -1204,8 +1304,7 @@ const AM_MCQ = [
   ],
   "correct": 0,
   "explain": "Almost all variations in the length of the ovarian cycle result from variations in the length of the follicular phase.",
-  "src": "Perry, Maternal Child Nursing Care 4th ed., Ch. 5 Test Bank, Q9",
-  "url": "https://www.scribd.com/document/242278614/137762447-Chapter-005"
+  "src": "Special O.Nursing Questions"
  },
  {
   "id": "US-C8",
@@ -1218,8 +1317,7 @@ const AM_MCQ = [
   ],
   "correct": 2,
   "explain": "Menstrual blood is a potent source of prostaglandins. The ovaries, breast milk and vagina are not sources of prostaglandins.",
-  "src": "Perry, Maternal Child Nursing Care 4th ed., Ch. 5 Test Bank, Q10",
-  "url": "https://www.scribd.com/document/242278614/137762447-Chapter-005"
+  "src": "Special O.Nursing Questions"
  },
  {
   "id": "US-C10",
@@ -1232,8 +1330,7 @@ const AM_MCQ = [
   ],
   "correct": 0,
   "explain": "The uterus is responsible for cyclic menstruation; it also houses and nourishes the fertilized ovum and fetus. The ovaries are responsible for ovulation and estrogen production; the vestibule is an external organ; the urethra is not a reproductive organ.",
-  "src": "Perry, Maternal Child Nursing Care 4th ed., Ch. 5 Test Bank, Q18",
-  "url": "https://www.scribd.com/document/242278614/137762447-Chapter-005"
+  "src": "Special O.Nursing Questions"
  },
  {
   "id": "US-C12",
@@ -1246,8 +1343,7 @@ const AM_MCQ = [
   ],
   "correct": 2,
   "explain": "The secretory phase extends from the day of ovulation to approximately 5 days before the next menstrual cycle; during this phase the endometrium becomes fully mature. In the menstrual phase the endometrium is being shed; the proliferative phase is rapid growth but not full maturity; in the ischemic phase the blood supply is blocked and necrosis develops.",
-  "src": "Perry, Maternal Child Nursing Care 4th ed., Ch. 5 Test Bank, Q20",
-  "url": "https://www.scribd.com/document/242278614/137762447-Chapter-005"
+  "src": "Special O.Nursing Questions"
  },
  {
   "id": "US-C13",
@@ -1260,8 +1356,7 @@ const AM_MCQ = [
   ],
   "correct": 3,
   "explain": "The menstrual, endometrial and ovarian cycles are interconnected; however, the cyclic release of hormones is the function of the hypothalamus and pituitary glands.",
-  "src": "Perry, Maternal Child Nursing Care 4th ed., Ch. 5 Test Bank, Q21",
-  "url": "https://www.scribd.com/document/242278614/137762447-Chapter-005"
+  "src": "Special O.Nursing Questions"
  },
  {
   "id": "US-C14",
@@ -1274,8 +1369,7 @@ const AM_MCQ = [
   ],
   "correct": 1,
   "explain": "PGs affect smooth muscle contraction and changes in the cervix. GnRH, FSH and LH are part of the hypothalamic–pituitary cycle, which responds to the rise and fall of estrogen and progesterone.",
-  "src": "Perry, Maternal Child Nursing Care 4th ed., Ch. 5 Test Bank, Q22",
-  "url": "https://www.scribd.com/document/242278614/137762447-Chapter-005"
+  "src": "Special O.Nursing Questions"
  }
 ];
 const AM_QA = [
@@ -1283,306 +1377,275 @@ const AM_QA = [
   "id": "US-D1",
   "q": "What are the two main functions of the reproductive system?",
   "a": "Ensure sexual maturation of each individual; produce reproductive cells known as gametes.",
-  "src": "Docsity, Female Reproductive System Q&A",
-  "url": "https://www.docsity.com/en/docs/female-reproductive-system-questions-with-correct-answers-4/13387371/"
+  "src": "Special O.Nursing Questions"
  },
  {
   "id": "US-D2",
   "q": "Compare and contrast oogenesis and spermatogenesis. Define oogonia. What are follicle cells? When does oogenesis begin?",
   "a": "The female typically produces and releases a single oocyte monthly. The male produces 100 million sperm daily. Females begin gamete formation before birth; males at puberty.\nOogonia are diploid cells containing 23 pairs of chromosomes, the stem cells for female gametes; follicle cells make up the primary follicle; oogenesis begins in a female fetus before birth.",
-  "src": "Docsity, Female Reproductive System Q&A",
-  "url": "https://www.docsity.com/en/docs/female-reproductive-system-questions-with-correct-answers-4/13387371/"
+  "src": "Special O.Nursing Questions"
  },
  {
   "id": "US-D3",
   "q": "What is the ovarian cycle? How do FSH and LH influence the ovarian cycle?",
   "a": "FSH (follicle-stimulating hormone) — released by the anterior pituitary, targets the ovary, required for follicle development and estrogen production. LH (luteinizing hormone) — released by the anterior pituitary, targets the ovary, stimulates conversion of the follicle into the corpus luteum after ovulation. The corpus luteum makes progesterone and estrogen. A surge in LH is required for ovulation.",
-  "src": "Docsity, Female Reproductive System Q&A",
-  "url": "https://www.docsity.com/en/docs/female-reproductive-system-questions-with-correct-answers-4/13387371/"
+  "src": "Special O.Nursing Questions"
  },
  {
   "id": "US-D5",
   "q": "Identify and describe the structure and function of the uterine tubes. What type of epithelium lines the lumen of the uterine tube?",
   "a": "The tubes extend laterally from both sides of the uterus toward the ovaries. The ovum is fertilized in the uterine tube and the zygote begins developing as it travels toward the uterus (usually 5–6 days to reach the uterus). Lined with ciliated simple columnar epithelium; smooth muscle tunic.",
-  "src": "Docsity, Female Reproductive System Q&A",
-  "url": "https://www.docsity.com/en/docs/female-reproductive-system-questions-with-correct-answers-4/13387371/"
+  "src": "Special O.Nursing Questions"
  },
  {
   "id": "US-D6",
   "q": "Identify and describe the anatomy of the uterus. Locate and describe: fundus, body, cervix, endometrium, myometrium, perimetrium.",
   "a": "Parts include the body and fundus, isthmus, and cervix. Layers of the uterine wall: perimetrium — adventitia; myometrium — delivery; endometrium — glands. Functional layer — shed; embryo/fetal support. Basal layer — not shed; for regeneration.\nThe uterus functions as the site of implantation, maintains and nourishes the embryo/fetus, and expels the fetus at delivery.",
-  "src": "Docsity, Female Reproductive System Q&A",
-  "url": "https://www.docsity.com/en/docs/female-reproductive-system-questions-with-correct-answers-4/13387371/"
+  "src": "Special O.Nursing Questions"
  },
  {
   "id": "US-D7",
   "q": "Describe the female external genitalia. Define: central tendon, mons pubis, labia majora and minora, clitoris, prepuce.",
   "a": "Central tendon — anchor for pelvic muscles; knob of connective tissue, tendon of the pelvic floor muscles. Mons pubis — the rounded, fleshy prominence over the symphysis pubis, covered with pubic hair. Labia majora — two rounded, fleshy folds extending from the mons pubis to the perineum, protecting the more fragile tissues. Labia minora — minor folds just lateral to the vestibule, extending from the clitoris anteriorly and merging posteriorly to form the fourchette. Clitoris — a small projection at the anterior junction of the labia minora, composed of highly sensitive erectile tissue. Prepuce — the fold formed by the labia majora merging over the clitoris.\n(Note: several definitions were blank in the source and are completed here from the same bank's fill-in items.)",
-  "src": "Docsity, Female Reproductive System Q&A",
-  "url": "https://www.docsity.com/en/docs/female-reproductive-system-questions-with-correct-answers-4/13387371/"
+  "src": "Special O.Nursing Questions"
  },
  {
   "id": "US-D8",
   "q": "What are the main hormones involved in regulating the menstrual cycle?",
   "a": "Follicle-stimulating hormone (FSH), luteinizing hormone (LH), estrogen, progesterone, and human chorionic gonadotropin (hCG).",
-  "src": "Docsity, Female Reproductive System Q&A",
-  "url": "https://www.docsity.com/en/docs/female-reproductive-system-questions-with-correct-answers-4/13387371/"
+  "src": "Special O.Nursing Questions"
  },
  {
   "id": "US-D9",
   "q": "Describe the changes in the endometrium during the menstrual cycle. Distinguish the basal layer from the functional layer and how their fates differ.",
   "a": "The functional layer is lost during menstruation and regenerated within the first 2 weeks of the menstrual cycle; it is ready for implantation during the secretory phase when the glands are secreting (at the end of the cycle before menstruation). The basal layer always remains, as it provides the stem cells needed for replacing the functional layer.",
-  "src": "Docsity, Female Reproductive System Q&A",
-  "url": "https://www.docsity.com/en/docs/female-reproductive-system-questions-with-correct-answers-4/13387371/"
+  "src": "Special O.Nursing Questions"
  },
  {
   "id": "US-E1",
   "q": "The hypothalamus releases GnRH — what does it do?",
   "a": "Stimulates the anterior pituitary gland to release FSH and LH.",
-  "src": "Docsity, Reproduction: A Concept-Based Approach",
-  "url": "https://www.docsity.com/en/docs/nursing-a-concept-based-approach-to-learning-reproduction-actual-exam-with-qs-and-as/12525762/"
+  "src": "Special O.Nursing Questions"
  },
  {
   "id": "US-E2",
   "q": "What is the primary action of FSH?",
   "a": "Primarily responsible for maturation of the ovarian follicle.",
-  "src": "Docsity, Reproduction: A Concept-Based Approach",
-  "url": "https://www.docsity.com/en/docs/nursing-a-concept-based-approach-to-learning-reproduction-actual-exam-with-qs-and-as/12525762/"
+  "src": "Special O.Nursing Questions"
  },
  {
   "id": "US-E3",
   "q": "As the follicle matures LH levels increase. What does LH do?",
   "a": "Triggers ovulation and development of the corpus luteum.",
-  "src": "Docsity, Reproduction: A Concept-Based Approach",
-  "url": "https://www.docsity.com/en/docs/nursing-a-concept-based-approach-to-learning-reproduction-actual-exam-with-qs-and-as/12525762/"
+  "src": "Special O.Nursing Questions"
  },
  {
   "id": "US-E4",
   "q": "What is ovulation?",
   "a": "One phase of the reproductive cycle in which a mature ovarian follicle breaks open and releases an ovum (egg) from the ovary.",
-  "src": "Docsity, Reproduction: A Concept-Based Approach",
-  "url": "https://www.docsity.com/en/docs/nursing-a-concept-based-approach-to-learning-reproduction-actual-exam-with-qs-and-as/12525762/"
+  "src": "Special O.Nursing Questions"
  },
  {
   "id": "US-E5",
   "q": "Where does estrogen come from and what does it do?",
   "a": "Secreted by the ovary. It suppresses FSH and stimulates LH, thus facilitating follicular rupture; aids in the proliferation phase of the endometrium; stimulates contraction of the fallopian tubes and uterus.",
-  "src": "Docsity, Reproduction: A Concept-Based Approach",
-  "url": "https://www.docsity.com/en/docs/nursing-a-concept-based-approach-to-learning-reproduction-actual-exam-with-qs-and-as/12525762/"
+  "src": "Special O.Nursing Questions"
  },
  {
   "id": "US-E6",
   "q": "Where does progesterone come from? What is the corpus luteum? What is the function of progesterone?",
   "a": "Secreted by the corpus luteum. The corpus luteum is a structure that forms within the ovary after the follicle ruptures. Progesterone decreases uterine motility and contractility in preparation for implantation after ovum fertilization; increases nutrient supply to the uterus; prepares the breasts for lactation. Known as the hormone of pregnancy because it supports pregnancy.",
-  "src": "Docsity, Reproduction: A Concept-Based Approach",
-  "url": "https://www.docsity.com/en/docs/nursing-a-concept-based-approach-to-learning-reproduction-actual-exam-with-qs-and-as/12525762/"
+  "src": "Special O.Nursing Questions"
  },
  {
   "id": "US-E7",
   "q": "Where does fertilization take place? Once fertilized, what happens to the ovum?",
   "a": "Within the ampulla (outer third) of the fallopian tube. Once fertilized, the ovum continues to travel down the fallopian tube and into the uterus; within the ovum the fertilized egg begins to multiply.",
-  "src": "Docsity, Reproduction: A Concept-Based Approach",
-  "url": "https://www.docsity.com/en/docs/nursing-a-concept-based-approach-to-learning-reproduction-actual-exam-with-qs-and-as/12525762/"
+  "src": "Special O.Nursing Questions"
  },
  {
   "id": "US-E8",
   "q": "How long does it take the ovum to travel down the fallopian tube and into the uterus?",
   "a": "Approximately 3 days. (American bank wording — the Egyptian bank gives 6 to 10 days for the fertilized egg to travel through the tube to implant.)",
-  "src": "Docsity, Reproduction: A Concept-Based Approach",
-  "url": "https://www.docsity.com/en/docs/nursing-a-concept-based-approach-to-learning-reproduction-actual-exam-with-qs-and-as/12525762/"
+  "src": "Special O.Nursing Questions"
  },
  {
   "id": "US-E9",
   "q": "What is menstruation? When does menstruation occur?",
   "a": "A cyclic uterine bleeding (endometrial shedding) in response to cyclic hormonal changes. It occurs when the ovum is not fertilized, beginning about 14 days after ovulation in an ideal 28-day cycle.",
-  "src": "Docsity, Reproduction: A Concept-Based Approach",
-  "url": "https://www.docsity.com/en/docs/nursing-a-concept-based-approach-to-learning-reproduction-actual-exam-with-qs-and-as/12525762/"
+  "src": "Special O.Nursing Questions"
  },
  {
   "id": "US-E10",
   "q": "How long does menstruation typically last?",
   "a": "2 to 8 days. (American bank range — the Egyptian summary gives the menstrual phase as 4–5 days.)",
-  "src": "Docsity, Reproduction: A Concept-Based Approach",
-  "url": "https://www.docsity.com/en/docs/nursing-a-concept-based-approach-to-learning-reproduction-actual-exam-with-qs-and-as/12525762/"
+  "src": "Special O.Nursing Questions"
  },
  {
   "id": "US-E11",
   "q": "What are the four phases of the uterine (menstrual) cycle?",
   "a": "Menstrual, proliferative, secretory, ischemic.",
-  "src": "Docsity, Reproduction: A Concept-Based Approach",
-  "url": "https://www.docsity.com/en/docs/nursing-a-concept-based-approach-to-learning-reproduction-actual-exam-with-qs-and-as/12525762/"
+  "src": "Special O.Nursing Questions"
  },
  {
   "id": "US-E12",
   "q": "What are the key points of the follicular phase?",
   "a": "Associated with days 1–14; stimulated by FSH; the follicle matures and ruptures on day 14 (ovulation); cervical mucosa thins.",
-  "src": "Docsity, Reproduction: A Concept-Based Approach",
-  "url": "https://www.docsity.com/en/docs/nursing-a-concept-based-approach-to-learning-reproduction-actual-exam-with-qs-and-as/12525762/"
+  "src": "Special O.Nursing Questions"
  },
  {
   "id": "US-E13",
   "q": "Describe the proliferative phase of the uterine cycle.",
   "a": "The endometrium increases in thickness as blood vessels and glands enlarge; cervical mucosa becomes thin, clear, watery, and alkaline.",
-  "src": "Docsity, Reproduction: A Concept-Based Approach",
-  "url": "https://www.docsity.com/en/docs/nursing-a-concept-based-approach-to-learning-reproduction-actual-exam-with-qs-and-as/12525762/"
+  "src": "Special O.Nursing Questions"
  },
  {
   "id": "US-E14",
   "q": "Describe the secretory phase of the uterine cycle.",
   "a": "Following ovulation, the endometrium grows and swells, producing folds; endometrial glands secrete small quantities of fluid; uterine vascularity increases, creating a bed for fertilized ovum implantation.",
-  "src": "Docsity, Reproduction: A Concept-Based Approach",
-  "url": "https://www.docsity.com/en/docs/nursing-a-concept-based-approach-to-learning-reproduction-actual-exam-with-qs-and-as/12525762/"
+  "src": "Special O.Nursing Questions"
  },
  {
   "id": "US-E15",
   "q": "Describe the ischemic phase of the uterine cycle. (Also: describe the menstrual phase.)",
   "a": "Ischemic — if fertilization does not occur, the corpus luteum degenerates, reducing estrogen and progesterone levels; vascular changes reduce blood flow to the endometrium; as the endometrium degenerates the menstrual flow begins. Menstrual — menstruation occurs during this phase; cervical mucosa is scanty, viscous, and opaque.",
-  "src": "Docsity, Reproduction: A Concept-Based Approach",
-  "url": "https://www.docsity.com/en/docs/nursing-a-concept-based-approach-to-learning-reproduction-actual-exam-with-qs-and-as/12525762/"
+  "src": "Special O.Nursing Questions"
  },
  {
   "id": "US-F1",
   "q": "Collectively, the external female reproductive organs are called the…",
   "a": "Vulva — the collective term for all external female genitalia.",
-  "src": "Docsity, Maternity Quiz 2 (Part 2)",
-  "url": "https://www.docsity.com/en/docs/maternity-quiz-2-part-2-female-reproductive-system-guide/12349450/"
+  "src": "Special O.Nursing Questions"
  },
  {
   "id": "US-F2",
   "q": "The rounded, fleshy prominence over the symphysis pubis that forms the anterior border of the external reproductive organs, covered with varying amounts of pubic hair, is the…",
   "a": "Mons pubis — fatty eminence over the symphysis pubis; anterior border of the vulva.",
-  "src": "Docsity, Maternity Quiz 2 (Part 2)",
-  "url": "https://www.docsity.com/en/docs/maternity-quiz-2-part-2-female-reproductive-system-guide/12349450/"
+  "src": "Special O.Nursing Questions"
  },
  {
   "id": "US-F3",
   "q": "Two rounded, fleshy folds of tissue that extend from the mons pubis to the perineum, slightly deeper pigmentation than surrounding skin, covered with pubic hair, protecting the more fragile tissues of the external genitalia, are the…",
   "a": "Labia majora — outer labial folds; protect the vestibule and inner structures.",
-  "src": "Docsity, Maternity Quiz 2 (Part 2)",
-  "url": "https://www.docsity.com/en/docs/maternity-quiz-2-part-2-female-reproductive-system-guide/12349450/"
+  "src": "Special O.Nursing Questions"
  },
  {
   "id": "US-F4",
   "q": "Folds that extend from the clitoris anteriorly and merge posteriorly to form the fourchette (posterior rim of the vaginal introitus); no pubic hair; highly vascular and engorged with blood on stimulation; running parallel to and within the labia majora, are the…",
   "a": "Labia minora — inner labial folds; meet anteriorly at the clitoris and posteriorly at the fourchette.",
-  "src": "Docsity, Maternity Quiz 2 (Part 2)",
-  "url": "https://www.docsity.com/en/docs/maternity-quiz-2-part-2-female-reproductive-system-guide/12349450/"
+  "src": "Special O.Nursing Questions"
  },
  {
   "id": "US-F5",
   "q": "A small projection at the anterior junction of the labia minora, composed of highly sensitive erectile tissue similar to tissue of the penis, is the…",
   "a": "Clitoris — erectile, highly sensitive structure at the anterior vulva; the labia majora merge to form its prepuce.",
-  "src": "Docsity, Maternity Quiz 2 (Part 2)",
-  "url": "https://www.docsity.com/en/docs/maternity-quiz-2-part-2-female-reproductive-system-guide/12349450/"
+  "src": "Special O.Nursing Questions"
  },
  {
   "id": "US-F6",
   "q": "The structures enclosed by the labia minora — the urinary meatus, vaginal introitus, and ducts of Skene and Bartholin glands lie within it — is the…",
   "a": "Vestibule — the space between the labia minora containing the urethral and vaginal openings and the Skene (periurethral) and Bartholin gland ducts.",
-  "src": "Docsity, Maternity Quiz 2 (Part 2)",
-  "url": "https://www.docsity.com/en/docs/maternity-quiz-2-part-2-female-reproductive-system-guide/12349450/"
+  "src": "Special O.Nursing Questions"
  },
  {
   "id": "US-F7",
   "q": "Bartholin glands provide lubrication for the vaginal introitus, particularly during what?",
   "a": "Sexual arousal — Bartholin (vestibular) glands secrete mucus that lubricates the introitus during arousal; Skene (periurethral) glands lubricate the urethra.",
-  "src": "Docsity, Maternity Quiz 2 (Part 2)",
-  "url": "https://www.docsity.com/en/docs/maternity-quiz-2-part-2-female-reproductive-system-guide/12349450/"
+  "src": "Special O.Nursing Questions"
  },
  {
   "id": "US-F8",
   "q": "A hollow, thick-walled muscular organ shaped like a flattened upside-down pear that houses and nourishes the fetus until birth and then contracts rhythmically during labor to expel the fetus; each month it is prepared for a pregnancy, whether or not conception occurs. It is the…",
   "a": "Uterus.",
-  "src": "Docsity, Maternity Quiz 2 (Part 2)",
-  "url": "https://www.docsity.com/en/docs/maternity-quiz-2-part-2-female-reproductive-system-guide/12349450/"
+  "src": "Special O.Nursing Questions"
  },
  {
   "id": "US-F9",
   "q": "The part of the corpus above the area where the fallopian tubes enter the uterus is the…",
   "a": "Fundus — the dome-shaped top of the uterus, above the tubal openings.",
-  "src": "Docsity, Maternity Quiz 2 (Part 2)",
-  "url": "https://www.docsity.com/en/docs/maternity-quiz-2-part-2-female-reproductive-system-guide/12349450/"
+  "src": "Special O.Nursing Questions"
  },
  {
   "id": "US-F10",
   "q": "During late pregnancy the ______ of the uterus elongates and is known as the lower uterine segment.",
   "a": "Isthmus — the narrow part between corpus and cervix; it elongates in late pregnancy to form the lower uterine segment.",
-  "src": "Docsity, Maternity Quiz 2 (Part 2)",
-  "url": "https://www.docsity.com/en/docs/maternity-quiz-2-part-2-female-reproductive-system-guide/12349450/"
+  "src": "Special O.Nursing Questions"
  },
  {
   "id": "US-F11",
   "q": "The outer peritoneal layer of serous membrane that covers most of the uterus, continuous laterally with the broad ligaments on either side, is the…",
   "a": "Perimetrium.",
-  "src": "Docsity, Maternity Quiz 2 (Part 2)",
-  "url": "https://www.docsity.com/en/docs/maternity-quiz-2-part-2-female-reproductive-system-guide/12349450/"
+  "src": "Special O.Nursing Questions"
  },
  {
   "id": "US-F12",
   "q": "Name the smooth-muscle fiber direction in each myometrial layer.",
   "a": "Outer layer — longitudinal (found mostly in the fundus; designed to expel the fetus efficiently toward the pelvic outlet during birth). Middle layer — figure-8 / interlacing (fibers contract after birth to compress the blood vessels passing between them to limit blood loss). Inner layer — circular (prevent reflux of menstrual blood and tissue into the fallopian tubes, promote normal implantation by controlling entry of the fertilized ovum into the uterus, and retain the fetus until the appropriate time of birth).",
-  "src": "Docsity, Maternity Quiz 2 (Part 2)",
-  "url": "https://www.docsity.com/en/docs/maternity-quiz-2-part-2-female-reproductive-system-guide/12349450/"
+  "src": "Special O.Nursing Questions"
  },
  {
   "id": "US-F13",
   "q": "The endometrium has 2 layers. The layer nearest the myometrium, which regenerates the functional layer after each menstrual period and after childbirth, is the ______ layer; the layer above it, containing the endometrial arteries, veins and glands, shed during each menstrual period and after childbirth in the lochia, is the ______ layer.",
   "a": "Basal layer; functional layer. The basal layer always remains as the stem-cell source for regenerating the functional layer; the functional layer is lost during menstruation and regenerated within the first 2 weeks of the cycle, ready for implantation during the secretory phase.",
-  "src": "Docsity, Maternity Quiz 2 (Part 2)",
-  "url": "https://www.docsity.com/en/docs/maternity-quiz-2-part-2-female-reproductive-system-guide/12349450/"
+  "src": "Special O.Nursing Questions"
  },
  {
   "id": "US-F14",
   "q": "The fallopian tubes, also called ___________, are 8 to 14 cm (3.2 to 5.6 inches) long and quite narrow (2 to 3 mm at their narrowest and 5 to 8 mm at their widest). The ovum travels from the ovary to the uterus through the fallopian tube.",
   "a": "Oviducts.",
-  "src": "Docsity, Maternity Quiz 2 (Part 2)",
-  "url": "https://www.docsity.com/en/docs/maternity-quiz-2-part-2-female-reproductive-system-guide/12349450/"
+  "src": "Special O.Nursing Questions"
  },
  {
   "id": "US-F15",
   "q": "The tubal isthmus remains contracted until ___ days after conception to allow the fertilized ovum to develop within the tube. (Initial growth of the fertilized ovum within the fallopian tube promotes its normal implantation in the fundal portion of the uterine corpus. Implantation within the tube results in an ectopic pregnancy.)",
   "a": "3 days.",
-  "src": "Docsity, Maternity Quiz 2 (Part 2)",
-  "url": "https://www.docsity.com/en/docs/maternity-quiz-2-part-2-female-reproductive-system-guide/12349450/"
+  "src": "Special O.Nursing Questions"
  },
  {
   "id": "US-F16",
   "q": "The ovaries have two functions: to produce sex hormones and to develop an ovum to maturity during each reproductive cycle.",
   "a": "Ovaries (produce sex hormones + mature one ovum per cycle).",
-  "src": "Docsity, Maternity Quiz 2 (Part 2)",
-  "url": "https://www.docsity.com/en/docs/maternity-quiz-2-part-2-female-reproductive-system-guide/12349450/"
+  "src": "Special O.Nursing Questions"
  },
  {
   "id": "US-F17",
   "q": "The regular and recurrent changes in the anterior pituitary secretions, ovaries, and uterine endometrium designed to prepare the body for pregnancy are called the… (duration usually 28 days but can be 20–45). The first day of the menstrual period is day ___ of a woman's cycle.",
   "a": "Female reproductive cycle (aka menstrual cycle); day 1.",
-  "src": "Docsity, Maternity Quiz 2 (Part 2)",
-  "url": "https://www.docsity.com/en/docs/maternity-quiz-2-part-2-female-reproductive-system-guide/12349450/"
+  "src": "Special O.Nursing Questions"
  },
  {
   "id": "US-F18",
   "q": "The female reproductive cycle is divided into two cycles reflecting changes in the ovaries and uterine endometrium: the ______ cycle and the ______ cycle. Phases of the ovarian cycle: follicular, ovulatory, luteal. Phases of the endometrial cycle: proliferative, secretory, menstrual.",
   "a": "Ovarian cycle; endometrial cycle.",
-  "src": "Docsity, Maternity Quiz 2 (Part 2)",
-  "url": "https://www.docsity.com/en/docs/maternity-quiz-2-part-2-female-reproductive-system-guide/12349450/"
+  "src": "Special O.Nursing Questions"
  },
  {
   "id": "US-F19",
   "q": "During most of the female reproductive cycle, the mucus of the cervix is described as…?",
   "a": "Scant, thick, sticky.",
-  "src": "Docsity, Maternity Quiz 2 (Part 2)",
-  "url": "https://www.docsity.com/en/docs/maternity-quiz-2-part-2-female-reproductive-system-guide/12349450/"
+  "src": "Special O.Nursing Questions"
  }
 ];
 function esc(s){ const d=document.createElement("div"); d.textContent=s; return d.innerHTML; }
+function srcTag(src, special){
+  return '<div class="fcsrc"><span class="srctag' + (special ? ' special' : '') + '">المصدر: ' + esc(src) + '</span></div>';
+}
 function renderFlashcards(){
-  const list = $("fc-list"); if(!list) return;
+  const groups = {"fc-define": [], "fc-func": [], "fc-list": []};
   QUESTIONS.filter(q=>q.type==="written").forEach(q=>{
-    const c = document.createElement("div"); c.className = "fcard";
-    c.innerHTML = '<div class="fq">'+esc(q.q)+'</div><div class="ftap">اضغط لعرض الإجابة النموذجية</div><div class="model"></div>';
-    c.querySelector(".model").textContent = q.model;
-    c.addEventListener("click", ()=>{ c.querySelector(".model").classList.toggle("show"); });
-    list.appendChild(c);
+    if(q.id[0]==="D") groups["fc-define"].push(q);
+    else if(q.id[0]==="F") groups["fc-func"].push(q);
+    else groups["fc-list"].push(q);
+  });
+  Object.keys(groups).forEach(gid=>{
+    const list = $(gid); if(!list) return;
+    groups[gid].forEach(q=>{
+      const c = document.createElement("div"); c.className = "fcard";
+      c.innerHTML = '<div class="fq">'+esc(q.q)+'</div><div class="ftap">اضغط لعرض الإجابة النموذجية</div><div class="model"></div>' + srcTag(q.src, false);
+      c.querySelector(".model").textContent = q.model;
+      c.addEventListener("click", ()=>{ c.querySelector(".model").classList.toggle("show"); });
+      list.appendChild(c);
+    });
   });
 }
 function renderAmerican(){
@@ -1593,7 +1656,7 @@ function renderAmerican(){
       c.innerHTML = '<div class="fq">'+esc(item.q)+'</div>' + opts +
         '<button class="showbtn">أظهر الإجابة</button>' +
         '<div class="model"></div>' +
-        '<div class="src">Source: '+esc(item.src)+' — <a href="'+esc(item.url)+'" target="_blank" rel="noopener">'+esc(item.url)+'</a></div>';
+        srcTag(item.src, true);
       const m = c.querySelector(".model");
       m.innerHTML = "<b>Correct answer: " + esc(item.options[item.correct]) + "</b><br>" + esc(item.explain);
       c.querySelector(".showbtn").addEventListener("click", (e)=>{ e.stopPropagation(); m.classList.toggle("show"); });
@@ -1604,7 +1667,7 @@ function renderAmerican(){
     AM_QA.forEach(item=>{
       const c = document.createElement("div"); c.className = "fcard";
       c.innerHTML = '<div class="fq">'+esc(item.q)+'</div><div class="ftap">اضغط لعرض الإجابة</div><div class="model"></div>' +
-        '<div class="src">Source: '+esc(item.src)+' — <a href="'+esc(item.url)+'" target="_blank" rel="noopener">'+esc(item.url)+'</a></div>';
+        srcTag(item.src, true);
       c.querySelector(".model").textContent = item.a;
       c.addEventListener("click", ()=>{ c.querySelector(".model").classList.toggle("show"); });
       qa.appendChild(c);
@@ -1616,5 +1679,6 @@ renderAmerican();
 
 refreshHome();
 </script>
+    <script src="timer-snippet.js"></script>
 </body>
 </html>
