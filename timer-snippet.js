@@ -53,10 +53,10 @@
   'use strict';
 
   /* ================= CONFIG ================= */
-  var WEB_APP_URL = 'https://script.google.com/macros/s/AKfycbzGZRZjezTXjwqchPwX75dvE25Z-0pSnm8tBECz6pLLo6VwuOpUNHHnccguTJm0WAJ-cg/exec'; // deployed 2026-11-22 23:09 EET, Version 1
+  var WEB_APP_URL = 'https://script.google.com/macros/s/AKfycbyVhfmZSyGsoaRAP1AHTiu482Pk3jeAxkr6P2B_PdIijzmQ9b0ywzY_i61uy3c2265FTg/exec'; // deployed 2026-11-23 00:25 EET, Version 2 — submit verified working after Sheet share 2026-11-23 13:07
   var TIME_LIMIT_MS = 30 * 60 * 1000;          // 30 minutes per student
   var TKEY = 'onursing_m1_timed_v1';           // localStorage session key (this module only)
-  var TOTAL = 30;                              // full timed attempt = all 30 scored questions
+  var TOTAL = 36;                              // full timed attempt = all 36 scored questions
 
   /* ================= helpers ================= */
   function $(id) { return document.getElementById(id); }
@@ -384,7 +384,7 @@
           if (inp) inp.focus();
           return;
         }
-        setLevelAll(); // timed attempt always runs the full 30 questions
+        setLevelAll(); // timed attempt always runs the full 36 questions
         var btn = $('btn-start');
         if (btn) { btn.disabled = true; btn.textContent = 'جارٍ بدء الوقت…'; }
         postJSON({ action: 'start', name: name }).then(function (res) {
